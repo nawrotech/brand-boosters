@@ -17,35 +17,18 @@
   src: url("/fonts/inter-v18-latin-700.woff2") format("woff2");
 }
 :root {
-  --neutral-000: hsl(0, 0%, 100%);
-  --neutral-100: hsl(0, 0%, 95%);
-  --neutral-200: hsl(0, 0%, 82.5%);
-  --neutral-300: hsl(0, 0%, 70%);
-  --neutral-400: hsl(0, 0%, 60%);
-  --neutral-500: hsl(0, 0%, 50%);
-  --neutral-600: hsl(0, 0%, 40%);
-  --neutral-700: hsl(0, 0%, 30%);
-  --neutral-800: hsl(0, 0%, 17.5%);
-  --neutral-900: hsl(0, 0%, 7.5%);
-  --neutral-1000: hsl(0, 0%, 0%);
-  --accent-100: hsl(336, 75%, 95%);
-  --accent-200: hsl(336, 75%, 82.5%);
-  --accent-300: hsl(336, 75%, 70%);
-  --accent-400: hsl(336, 75%, 60%);
-  --accent-500: hsl(336, 75%, 50%);
-  --accent-600: hsl(336, 75%, 40%);
-  --accent-700: hsl(336, 75%, 30%);
-  --accent-800: hsl(336, 75%, 17.5%);
-  --accent-900: hsl(336, 75%, 7.5%);
-  --primary-100: hsl(216, 75%, 95%);
-  --primary-200: hsl(216, 75%, 82.5%);
-  --primary-300: hsl(216, 75%, 70%);
-  --primary-400: hsl(216, 75%, 60%);
-  --primary-500: hsl(216, 75%, 50%);
-  --primary-600: hsl(216, 75%, 40%);
-  --primary-700: hsl(216, 75%, 30%);
-  --primary-800: hsl(216, 75%, 17.5%);
-  --primary-900: hsl(216, 75%, 7.5%);
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-300: hsl(0, 0%, 91%);
+  --neutral-400: hsl(0, 0%, 42%);
+  --neutral-500: hsl(0, 0%, 70%);
+  --accent-300: hsl(168, 98%, 81%);
+  --accent-400: hsl(168, 96%, 51%);
+  --accent-500: hsl(168, 100%, 41%);
+  --accent-600: hsl(168, 80%, 19%);
+  --primary-300: hsl(213, 47%, 96%);
+  --primary-400: hsl(218, 39%, 86%);
+  --primary-500: hsl(218, 48%, 39%);
+  --primary-600: hsl(218, 36%, 23%);
   --fs-900: 2.625rem;
   --fs-800: 2rem;
   --fs-700: 1.5rem;
@@ -276,28 +259,12 @@ input:not(.button) {
   grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
 }
 
-.clr-neutral-000 {
-  color: var(--neutral-000);
-}
-
-.bg-neutral-000 {
-  background-color: var(--neutral-000);
-}
-
 .clr-neutral-100 {
   color: var(--neutral-100);
 }
 
 .bg-neutral-100 {
   background-color: var(--neutral-100);
-}
-
-.clr-neutral-200 {
-  color: var(--neutral-200);
-}
-
-.bg-neutral-200 {
-  background-color: var(--neutral-200);
 }
 
 .clr-neutral-300 {
@@ -322,62 +289,6 @@ input:not(.button) {
 
 .bg-neutral-500 {
   background-color: var(--neutral-500);
-}
-
-.clr-neutral-600 {
-  color: var(--neutral-600);
-}
-
-.bg-neutral-600 {
-  background-color: var(--neutral-600);
-}
-
-.clr-neutral-700 {
-  color: var(--neutral-700);
-}
-
-.bg-neutral-700 {
-  background-color: var(--neutral-700);
-}
-
-.clr-neutral-800 {
-  color: var(--neutral-800);
-}
-
-.bg-neutral-800 {
-  background-color: var(--neutral-800);
-}
-
-.clr-neutral-900 {
-  color: var(--neutral-900);
-}
-
-.bg-neutral-900 {
-  background-color: var(--neutral-900);
-}
-
-.clr-neutral-1000 {
-  color: var(--neutral-1000);
-}
-
-.bg-neutral-1000 {
-  background-color: var(--neutral-1000);
-}
-
-.clr-accent-100 {
-  color: var(--accent-100);
-}
-
-.bg-accent-100 {
-  background-color: var(--accent-100);
-}
-
-.clr-accent-200 {
-  color: var(--accent-200);
-}
-
-.bg-accent-200 {
-  background-color: var(--accent-200);
 }
 
 .clr-accent-300 {
@@ -412,46 +323,6 @@ input:not(.button) {
   background-color: var(--accent-600);
 }
 
-.clr-accent-700 {
-  color: var(--accent-700);
-}
-
-.bg-accent-700 {
-  background-color: var(--accent-700);
-}
-
-.clr-accent-800 {
-  color: var(--accent-800);
-}
-
-.bg-accent-800 {
-  background-color: var(--accent-800);
-}
-
-.clr-accent-900 {
-  color: var(--accent-900);
-}
-
-.bg-accent-900 {
-  background-color: var(--accent-900);
-}
-
-.clr-primary-100 {
-  color: var(--primary-100);
-}
-
-.bg-primary-100 {
-  background-color: var(--primary-100);
-}
-
-.clr-primary-200 {
-  color: var(--primary-200);
-}
-
-.bg-primary-200 {
-  background-color: var(--primary-200);
-}
-
 .clr-primary-300 {
   color: var(--primary-300);
 }
@@ -482,30 +353,6 @@ input:not(.button) {
 
 .bg-primary-600 {
   background-color: var(--primary-600);
-}
-
-.clr-primary-700 {
-  color: var(--primary-700);
-}
-
-.bg-primary-700 {
-  background-color: var(--primary-700);
-}
-
-.clr-primary-800 {
-  color: var(--primary-800);
-}
-
-.bg-primary-800 {
-  background-color: var(--primary-800);
-}
-
-.clr-primary-900 {
-  color: var(--primary-900);
-}
-
-.bg-primary-900 {
-  background-color: var(--primary-900);
 }
 
 .fs-900 {

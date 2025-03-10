@@ -46,10 +46,10 @@
   --primary-700: hsl(216, 75%, 30%);
   --primary-800: hsl(216, 75%, 17.5%);
   --primary-900: hsl(216, 75%, 7.5%);
-  --fs-900: 3.75rem;
-  --fs-800: 2.25rem;
-  --fs-700: 1.75rem;
-  --fs-600: 1.125rem;
+  --fs-900: 2.625rem;
+  --fs-800: 2rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1.375rem;
   --fs-500: 1.125rem;
   --fs-400: 1rem;
   --fs-300: 0.925rem;
@@ -57,10 +57,10 @@
 }
 @media screen and (min-width: 65em) {
   :root {
-    --fs-900: 3.75rem;
-    --fs-800: 3rem;
-    --fs-700: 1.75rem;
-    --fs-600: 1.3125rem;
+    --fs-900: 3.5rem;
+    --fs-800: 2.625rem;
+    --fs-700: 1.5rem;
+    --fs-600: 1.375rem;
     --fs-500: 1.125rem;
     --fs-400: 1rem;
     --fs-300: 0.925rem;
@@ -945,47 +945,47 @@ input:not(.button) {
 }
 
 .margin-10 {
-  margin: 3rem;
+  margin: 3.75;
 }
 .margin-block-start-10 {
-  margin-block-start: 3rem;
+  margin-block-start: 3.75;
 }
 .margin-block-end-10 {
-  margin-block-end: 3rem;
+  margin-block-end: 3.75;
 }
 .margin-block-10 {
-  margin-block: 3rem;
+  margin-block: 3.75;
 }
 .margin-inline-start-10 {
-  margin-inline-start: 3rem;
+  margin-inline-start: 3.75;
 }
 .margin-inline-end-10 {
-  margin-inline-end: 3rem;
+  margin-inline-end: 3.75;
 }
 .margin-inline-10 {
-  margin-inline: 3rem;
+  margin-inline: 3.75;
 }
 
 .padding-10 {
-  padding: 3rem;
+  padding: 3.75;
 }
 .padding-block-start-10 {
-  padding-block-start: 3rem;
+  padding-block-start: 3.75;
 }
 .padding-block-end-10 {
-  padding-block-end: 3rem;
+  padding-block-end: 3.75;
 }
 .padding-block-10 {
-  padding-block: 3rem;
+  padding-block: 3.75;
 }
 .padding-inline-start-10 {
-  padding-inline-start: 3rem;
+  padding-inline-start: 3.75;
 }
 .padding-inline-end-10 {
-  padding-inline-end: 3rem;
+  padding-inline-end: 3.75;
 }
 .padding-inline-10 {
-  padding-inline: 3rem;
+  padding-inline: 3.75;
 }
 
 .margin-11 {

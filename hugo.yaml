@@ -1,0 +1,7 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Brand boosters'
+theme: 'base'
+disableKinds:
+  - taxonomy
+  - term

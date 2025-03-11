@@ -1,8 +1,8 @@
 @use "../abstracts" as *;
 
 .button {
-  display: inline-flex;
-  justify-content: center;
+  display: inline-block;
+  align-content: center;
   cursor: pointer;
   text-decoration: none;
   line-height: 1;
@@ -10,7 +10,8 @@
   font-size: $button-font-size;
   text-transform: $button-text-transform;
   font-weight: $button-font-weight;
-  padding: $button-padding;
+  padding-inline: $button-padding-inline;
+  padding-block: $button-padding-block;
   border: $button-border;
   border-radius: $button-border-radius;
   transition: 275ms ease;

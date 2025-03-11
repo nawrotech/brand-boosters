@@ -8,8 +8,10 @@ $enable-media-query-dark-mode: false;
 // Contextual
 $color-text-default: $color-neutral-500;
 $color-background-default: $color-primary-100;
-$color-text-interactive-default: $color-accent-400;
-$color-text-interactive-hover: $color-accent-500;
+$color-text-interactive-default: $color-brand-primary-400;
+$color-text-interactive-active: $color-brand-accent-700;
+
+$icon-default-size: 4rem;
 
 // set to 0 to disable
 $letter-spacing-loose: 0;
@@ -34,14 +36,14 @@ $box-shadow-5: 0px 6px 5px rgb(0, 0, 0, 0.04), 0px 22px 18px rgb(0, 0, 0, 0.06),
 
 // body
 $body-font-family: $font-family-base;
-$body-font-size: $font-size-400;
-$body-line-height: 1.5;
 $body-font-weight: $font-weight-default;
+$body-font-size: $font-size-500;
+$body-line-height: 1.5;
 $body-text-color: $color-text-default;
 $body-background-color: $color-background-default;
 
 $link-color: $color-text-interactive-default;
-$link-color-hover: $color-text-interactive-hover;
+$link-color-active: $color-text-interactive-active;
 
 $heading-font-family: $font-family-accent;
 $heading-color-default: $color-neutral-900;
@@ -61,8 +63,8 @@ $heading-3-color: $heading-color-default;
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 
-$hero-padding-block: clamp(15rem, 15vh, 20rem);
-$section-padding-block: clamp(5rem, 10vh, 6rem);
+$hero-padding-block: clamp(5rem, 10vh, 6rem);
+$section-padding-block: clamp($size-10, 15vh, $size-12);
 
 $container-min-margin-inline: $size-4;
 $container-max-width: 64rem;
@@ -80,7 +82,7 @@ $site-header-alignment: center;
 
 //navigation
 $navigation-color: $site-header-color;
-$navigation-color-hover: $color-primary-300;
+$navigation-color-active: $color-primary-300;
 $navigation-font-size: $font-size-400;
 $navigation-gap: $size-9;
 $navigation-link-text-decoration: none;
@@ -91,27 +93,37 @@ $navigation-font-weight: $body-font-weight;
 $footer-background-color: $color-primary-300;
 $footer-text-color: $color-primary-900;
 $footer-link-color: $color-neutral-100;
-$footer-link-color-hover: $color-primary-200;
+$footer-link-color-active: $color-primary-200;
 $footer-link-font-family: $font-family-accent;
 $footer-link-text-decoration: none;
 
 // buttons
 $button-font-family: $body-font-family;
-$button-font-size: $font-size-400;
-$button-font-weight: $font-weight-bold;
-$button-text-transform: uppercase;
-$button-padding: 0.75em 2em;
+$button-font-size: $body-font-size;
+$button-font-weight: $body-font-weight;
+$button-text-transform: none;
+$button-padding-inline: 2em;
+$button-padding-block: 0.75em;
+
 $button-border: 0;
 $button-border-radius: $border-radius-1;
 
-$button-accent-color: $color-neutral-100;
-$button-accent-background: $color-accent-400;
-$button-accent-color-hover: $color-neutral-100;
-$button-accent-background-hover: $color-accent-500;
+$button-primary-background: $color-brand-primary-400;
 $button-primary-color: $color-neutral-100;
-$button-primary-background: $color-primary-700;
-$button-primary-color-hover: $color-neutral-100;
-$button-primary-background-hover: $color-primary-800;
+$button-primary-background-active: $color-brand-primary-200;
+$button-primary-color-active: $color-brand-primary-700;
+
+$button-accent-background: $color-brand-accent-400;
+$button-accent-color: $color-brand-primary-700;
+$button-accent-background-active: $color-brand-accent-200;
+$button-accent-color-active: $color-brand-primary-700;
+
+$button-link-background: $color-neutral-100;
+$button-link-color: $color-brand-primary-400;
+$button-link-background-active: $color-brand-accent-200;
+$button-link-color-active:  $color-neutral-200;
+
+
 
 // cards
 $card-flow-spacing: $size-2;

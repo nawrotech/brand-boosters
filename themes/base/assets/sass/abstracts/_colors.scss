@@ -30,8 +30,8 @@ $-clr-cyan-dark: hsl(195 69% 27%);
 
 $default: (
   "neutral": (
-    "000": $-clr-white,
-    "100": $-clr-grey-light,
+    "100": $-clr-white,
+    "200": $-clr-grey-light,
     "400": $-clr-grey-mid,
     "700": $-clr-grey-dark,
   ),
@@ -66,8 +66,8 @@ $default: (
 
 
 // contextual color tokens
-$color-neutral-000: var(--neutral-000);
 $color-neutral-100: var(--neutral-100);
+$color-neutral-200: var(--neutral-200);
 $color-neutral-400: var(--neutral-400);
 $color-neutral-700: var(--neutral-700);
 

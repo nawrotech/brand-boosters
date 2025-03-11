@@ -11,7 +11,7 @@
     text-decoration: $navigation-link-text-decoration;
 
     &:is(:hover, :focus) {
-      color: $navigation-color-hover;
+      color: $navigation-color-active;
     }
   }
 }

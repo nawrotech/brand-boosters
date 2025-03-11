@@ -74,22 +74,25 @@ $container-max-width-narrow: 40rem;
 $container-max-width-wide: 75rem;
 
 // site header
-$site-header-background-color: $color-primary-300;
-$site-header-color: $color-neutral-900;
-$site-header-padding: $size-8 0;
-$site-header-margin: 0;
-$site-header-jusitifcation-small-screens: center;
-$site-header-jusitifcation-large-screens: space-between;
-$site-header-alignment: center;
+$header-background-color: $color-brand-primary-100;
+$header-color: $color-neutral-700;
+$header-padding-block: $size-6;
+$header-padding-inline: 0;
+$header-margin: 0;
+$header-jusitifcation-small-screens: space-between;
+$header-jusitifcation-large-screens: space-between;
+$header-alignment: center;
+
 
 //navigation
-$navigation-color: $site-header-color;
-$navigation-color-active: $color-primary-300;
-$navigation-font-size: $font-size-400;
+$navigation-color: $header-color;
+$navigation-color-active: $header-color;
+$navigation-font-size: $font-size-500;
 $navigation-gap: $size-9;
 $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
+
 
 // site footer
 $footer-background-color: $color-primary-300;

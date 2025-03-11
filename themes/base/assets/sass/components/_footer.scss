@@ -12,7 +12,7 @@
     letter-spacing: $letter-spacing-loose;
 
     &:is(:hover, :focus) {
-      color: $footer-link-color-hover;
+      color: $footer-link-color-active;
     }
   }
 }

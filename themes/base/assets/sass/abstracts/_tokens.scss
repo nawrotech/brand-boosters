@@ -127,8 +127,8 @@ $button-accent-color-active: $color-brand-primary-700;
 
 $button-link-background: $color-neutral-100;
 $button-link-color: $color-brand-primary-400;
-$button-link-background-active: $color-brand-accent-200;
-$button-link-color-active:  $color-neutral-200;
+$button-link-background-active:  $color-neutral-200;
+$button-link-color-active:   $color-brand-primary-400;
 
 
 // cards
@@ -142,6 +142,16 @@ $card-font-family: $body-font-family;
 $card-line-height: 1.25;
 $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-600;
+
+
+// hero
+$hero-splitting-gap-small-screen: $size-9;
+$hero-splitting-gap-medium-screen: $size-10;
+$hero-buttons-group-gap: $size-4;
+$hero-flow-space: $size-6;
+$hero-heading-emphasized-text-color: $color-brand-accent-400;;
+$hero-alignement: left;
+$hero-buttons-alignement: ("left": start, "center": center, "right": end);
 
 
 

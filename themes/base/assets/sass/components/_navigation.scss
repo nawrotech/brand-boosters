@@ -4,11 +4,11 @@
   position: fixed;
   inset-inline: 0;
   inset-block-start: $header-block-size;
-  transition: all .3s ease-in;
+  transition: all .5s ease-in;
   background-color: $header-background-color;
+  
   display: grid;
   grid-template-rows: 0fr;
-  padding-block: $size-8;
   opacity: 0;
 
   & > * {
@@ -19,7 +19,6 @@
     position: static;
     display: block;
     opacity: 1;
-    padding-block: 0;
   }
 
   ul {
@@ -29,6 +28,7 @@
     list-style: none;
     text-align: center; 
 
+
     display: flex;
     flex-flow: column nowrap;
     gap: var(--flex-column-gap);
@@ -36,13 +36,14 @@
     @include mq(medium) {
       flex-flow: row wrap;
       --flex-column-gap: #{$navigation-gap-medium-screen};
-
     }
   }
 
   .header:has(#hamburger-menu:checked) & {
     grid-template-rows: 1fr;
     opacity: 1;
+    padding-block-end: $size-8;
+
   }
 
   a {

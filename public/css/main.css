@@ -176,8 +176,8 @@ svg {
   color: var(--brand-primary-400);
 }
 .button[data-type=link]:is(:hover, :focus) {
-  background-color: var(--brand-accent-200);
-  color: var(--neutral-200);
+  background-color: var(--neutral-200);
+  color: var(--brand-primary-400);
 }
 
 .heading-1 {
@@ -238,11 +238,10 @@ svg {
   position: fixed;
   inset-inline: 0;
   inset-block-start: 112px;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   background-color: var(--brand-primary-100);
   display: grid;
   grid-template-rows: 0fr;
-  padding-block: 2rem;
   opacity: 0;
 }
 .nav > * {
@@ -253,7 +252,6 @@ svg {
     position: static;
     display: block;
     opacity: 1;
-    padding-block: 0;
   }
 }
 .nav ul {
@@ -275,6 +273,7 @@ svg {
 .header:has(#hamburger-menu:checked) .nav {
   grid-template-rows: 1fr;
   opacity: 1;
+  padding-block-end: 2rem;
 }
 .nav a {
   color: var(--neutral-700);
@@ -305,6 +304,38 @@ svg {
   .hamburger-menu-icon {
     display: none;
   }
+}
+
+.hero {
+  --flow-space: 1.5rem;
+  text-align: left;
+}
+.hero strong {
+  color: var(--brand-accent-400);
+}
+.hero .wrapper {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.hero .wrapper > * {
+  flex: 1;
+}
+@media screen and (min-width: 45em) {
+  .hero .wrapper {
+    flex-direction: row;
+    gap: 3.75rem;
+  }
+}
+.hero .buttons-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+}
+.hero img {
+  object-fit: cover;
+  inline-size: 100%;
 }
 
 .even-columns {
@@ -1268,7 +1299,7 @@ svg {
 }
 
 .flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 1em);
+  margin-top: var(--flow-space, 1em);
 }
 
 .border-radius-1 {

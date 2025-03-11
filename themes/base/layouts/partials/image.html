@@ -1,0 +1,34 @@
+{{ $src := .resourceSrc }}
+{{ $width := .width }}
+{{ $altText := .altText }}
+
+
+{{ if $src  }}
+
+    {{ $data := newScratch }}
+
+    {{ if $width }}
+        {{ $data.Set "webp" ($src.Resize (printf "%dx webp q90" $width)) }}
+        {{ $data.Set "fallback" ($src.Resize (printf "%dx q90" $width)) }}
+        {{ else }}
+        {{ $data.Set "webp" ($src.Resize (printf "%dx%d webp q90" $src.Width $src.Height)) }}
+        {{ $data.Set "fallback" ($src.Resize (printf "%dx%d q90" $src.Width $src.Height)) }}
+    {{ end }}
+
+    {{ $webp := $data.Get "webp" }}
+    {{ $fallback := $data.Get "fallback" }}
+
+            <picture>
+                <source srcset="{{ $webp.RelPermalink }}" type="image/webp" >
+                
+                <img 
+                    src="{{ $fallback.RelPermalink }}"
+                    alt="{{ $altText }}" 
+                    decoding="async" 
+                    loading="lazy" 
+                    width="{{ $webp.Width }}" height="{{ $webp.Height }}" />
+            </picture>
+                
+{{ end }}
+
+

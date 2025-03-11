@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+.hero {
+    --flow-space: #{$hero-flow-space};
+    text-align: $hero-alignement;
+
+    strong {
+        color: $hero-heading-emphasized-text-color
+    }
+
+    .wrapper {
+        display: flex;
+        gap: $hero-splitting-gap-small-screen;
+        align-items: center;
+        flex-flow: column nowrap;
+
+        & > * {
+            flex: 1;
+        }
+
+        @include mq(medium) {
+            flex-direction: row;
+            gap: $hero-splitting-gap-medium-screen;
+        }
+
+
+    }
+
+    .buttons-group {
+        display: flex;
+        gap: $hero-buttons-group-gap;
+        justify-content: map.get($hero-buttons-alignement, $hero-alignement); 
+    }
+
+    img {
+        object-fit: cover;
+        inline-size: 100%;
+    }
+}

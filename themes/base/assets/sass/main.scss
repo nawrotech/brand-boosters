@@ -1,25 +1,6 @@
-// @use "base";
-// @use "components";
-// @use "layout";
-// @use "utilities";
+@use "base";
+@use "components";
+@use "layout";
+@use "utilities";
 @use "vendor";
 
-.btn {
-
-    text-align: center;
-    padding-inline: 1em;
-    padding-block: .5em;
-    background-color: green;
-}
-
-.flex {
-    display: flex;
-    inline-size: 600px;
-    block-size: 400px;
-    background-color: blue;
-    // justify-content: center;
-
-    .btn {
-        margin: auto;
-    }
-}

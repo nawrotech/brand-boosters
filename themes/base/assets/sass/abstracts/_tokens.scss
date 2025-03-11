@@ -2,12 +2,12 @@
 @use "typography" as *;
 @use "sizes" as *;
 
-$active-theme: $light;
+$active-theme: $default;
 $enable-media-query-dark-mode: false;
 
 // Contextual
-$color-text-default: $color-neutral-500;
-$color-background-default: $color-primary-100;
+$color-text-default: $color-neutral-400;
+$color-background-default: $color-brand-primary-100;
 $color-text-interactive-default: $color-brand-primary-400;
 $color-text-interactive-active: $color-brand-accent-700;
 
@@ -68,10 +68,10 @@ $flex-group-gap: $size-4;
 $hero-padding-block: clamp(5rem, 10vh, 6rem);
 $section-padding-block: clamp($size-10, 15vh, $size-12);
 
-$container-min-margin-inline: $size-4;
-$container-max-width: 64rem;
-$container-max-width-narrow: 40rem;
-$container-max-width-wide: 75rem;
+$container-min-margin-inline: $size-5;
+$container-max-inline-size: 68.75rem;
+$container-max-inline-size-narrow: 61.25rem;
+$container-max-inline-size-wide: 75rem;
 
 // header
 $header-background-color: $color-brand-primary-100;

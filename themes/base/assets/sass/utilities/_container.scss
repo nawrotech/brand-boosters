@@ -2,17 +2,17 @@
 
 .container {
   --padding: #{$container-min-margin-inline} * 2;
-  --max-width: #{$container-max-width};
+  --max-width: #{$container-max-inline-size};
 
-  width: min(100% - var(--padding), var(--max-width));
+  width: min(100% - var(--padding), var(--max-inline-size));
   margin-inline: auto;
 }
 
 .container[data-type="narrow"] {
-  --max-width: #{$container-max-width-narrow};
+  --max-width: #{$container-max-inline-size-narrow};
 }
 .container[data-type="wide"] {
-  --max-width: #{$container-max-width-wide};
+  --max-width: #{$container-max-inline-size-wide};
 }
 .container[data-type="full-bleed"] {
   --max-width: 100%;

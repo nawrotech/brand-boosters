@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+.hamburger-menu-icon {
+    stroke: $header-color;
+    @include mq(medium) {
+      display: none;
+    }
+  }

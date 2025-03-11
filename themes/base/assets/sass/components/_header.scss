@@ -5,12 +5,19 @@
   color: $header-color;
   padding-block: $header-padding-block;
   padding-inline: $header-padding-inline;
+  block-size: $header-block-size;
+
+  .logo {
+    inline-size: $header-logo-size;
+    block-size: $header-logo-size;
+  }
 
   &__inner {
     display: flex;
     gap: $size-4;
     align-items: $header-alignment;
     justify-content: $header-jusitifcation-small-screens;
+    background-color:  $header-background-color;
 
     @include mq(medium) {
       justify-content: $header-jusitifcation-large-screens;

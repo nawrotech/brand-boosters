@@ -1,10 +1,49 @@
 @use "../abstracts" as *;
 
 .nav {
-  --flex-column-gap: #{$navigation-gap};
-  list-style: none;
-  font-family: $navigation-font-family;
-  font-weight: $navigation-font-weight;
+  position: fixed;
+  inset-inline: 0;
+  inset-block-start: $header-block-size;
+  transition: all .3s ease-in;
+  background-color: $header-background-color;
+  display: grid;
+  grid-template-rows: 0fr;
+  padding-block: $size-8;
+  opacity: 0;
+
+  & > * {
+    overflow: hidden;
+  }
+
+  @include mq(medium) {
+    position: static;
+    display: block;
+    opacity: 1;
+    padding-block: 0;
+  }
+
+  ul {
+    --flex-column-gap: #{$navigation-gap-small-screen};
+    font-family: $navigation-font-family;
+    font-weight: $navigation-font-weight;
+    list-style: none;
+    text-align: center; 
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--flex-column-gap);
+
+    @include mq(medium) {
+      flex-flow: row wrap;
+      --flex-column-gap: #{$navigation-gap-medium-screen};
+
+    }
+  }
+
+  .header:has(#hamburger-menu:checked) & {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
 
   a {
     color: $navigation-color;

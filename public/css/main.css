@@ -215,12 +215,18 @@ svg {
   color: var(--neutral-700);
   padding-block: 1.5rem;
   padding-inline: 0;
+  block-size: 112px;
+}
+.header .logo {
+  inline-size: 60px;
+  block-size: 60px;
 }
 .header__inner {
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--brand-primary-100);
 }
 @media screen and (min-width: 45em) {
   .header__inner {
@@ -229,10 +235,46 @@ svg {
 }
 
 .nav {
-  --flex-column-gap: 2.5rem;
-  list-style: none;
+  position: fixed;
+  inset-inline: 0;
+  inset-block-start: 112px;
+  transition: all 0.3s ease-in;
+  background-color: var(--brand-primary-100);
+  display: grid;
+  grid-template-rows: 0fr;
+  padding-block: 2rem;
+  opacity: 0;
+}
+.nav > * {
+  overflow: hidden;
+}
+@media screen and (min-width: 45em) {
+  .nav {
+    position: static;
+    display: block;
+    opacity: 1;
+    padding-block: 0;
+  }
+}
+.nav ul {
+  --flex-column-gap: 2rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--flex-column-gap);
+}
+@media screen and (min-width: 45em) {
+  .nav ul {
+    flex-flow: row wrap;
+    --flex-column-gap: 3.75rem;
+  }
+}
+.header:has(#hamburger-menu:checked) .nav {
+  grid-template-rows: 1fr;
+  opacity: 1;
 }
 .nav a {
   color: var(--neutral-700);
@@ -254,6 +296,15 @@ svg {
 }
 .site-footer a:is(:hover, :focus) {
   color: var(--neutral-700);
+}
+
+.hamburger-menu-icon {
+  stroke: var(--neutral-700);
+}
+@media screen and (min-width: 45em) {
+  .hamburger-menu-icon {
+    display: none;
+  }
 }
 
 .even-columns {
@@ -474,7 +525,7 @@ svg {
 }
 
 .section {
-  padding-block: clamp(3.75, 15vh, 5rem);
+  padding-block: clamp(3.75rem, 15vh, 5rem);
 }
 
 .mx-auto {
@@ -1142,22 +1193,22 @@ svg {
 }
 
 .container {
-  --padding: 1.25rem * 2;
-  --max-width: 68.75rem;
-  width: min(100% - var(--padding), var(--max-inline-size));
+  --padding: 2.5rem;
+  --max-inline-size: 68.75rem;
+  max-inline-size: min(100% - var(--padding), var(--max-inline-size));
   margin-inline: auto;
 }
 
 .container[data-type=narrow] {
-  --max-width: 61.25rem;
+  --max-inline-size: 61.25rem;
 }
 
 .container[data-type=wide] {
-  --max-width: 75rem;
+  --max-inline-size: 75rem;
 }
 
 .container[data-type=full-bleed] {
-  --max-width: 100%;
+  --max-inline-size: 100%;
 }
 
 .fw-regular {
@@ -1226,6 +1277,10 @@ svg {
 
 .border-radius-2 {
   border-radius: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

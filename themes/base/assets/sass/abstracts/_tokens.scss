@@ -65,7 +65,6 @@ $heading-3-color: $color-neutral-100;
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 
-
 $hero-padding-block: clamp(5rem, 10vh, 6rem);
 $section-padding-block: clamp(#{$size-10}, 15vh, #{$size-12});
 
@@ -83,13 +82,16 @@ $header-margin: 0;
 $header-jusitifcation-small-screens: space-between;
 $header-jusitifcation-large-screens: space-between;
 $header-alignment: center;
-
+$header-block-size: 112px;
+$header-logo-size: 60px;
 
 //navigation
 $navigation-color: $header-color;
 $navigation-color-active: $header-color;
 $navigation-font-size: $font-size-500;
-$navigation-gap: $size-9;
+$navigation-gap-small-screen: $size-8;
+$navigation-gap-medium-screen: $size-10;
+
 $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
@@ -141,7 +143,7 @@ $card-line-height: 1.25;
 $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-600;
 
-// forms
+
 
 
 

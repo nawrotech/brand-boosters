@@ -1,9 +1,36 @@
 @use "../abstracts" as *;
 
 
-.site-footer {
+.footer {
   background-color: $footer-background-color;
   color: $footer-text-color;
+  font-size: $footer-font-size;
+
+  &__inner {
+      & > * {
+        padding-block: 2rem;
+        border-block-end: $footer-separating-border-width solid $footer-separating-border-color;
+      }
+
+      & > :first-child {
+        padding-block: 0 2rem;
+      }
+
+      & > :last-child {
+        padding-block: 2rem 0;
+        border: none;
+      }
+  }
+
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: $footer-links-gap;
+
+  }
 
   a {
     color: $footer-link-color;

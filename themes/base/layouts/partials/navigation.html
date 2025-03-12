@@ -1,19 +1,9 @@
 <nav class="nav">
     <ul>
-        <li>
-            <a href="">Pricing</a>
-        </li>
-        <li>
-            <a href="">About us</a>
-        </li>
-        <li>
-            <a href="">Features</a>
-        </li>
-        <li>
-            <a href="">Contact us</a>
-        </li>
-        <li>
-            <a href="">Careers</a>
-        </li>
+        {{ range site.Menus.main }}
+            <li>
+                <a href="{{ .PageRef }}">{{ .Name }}</a>
+            </li>
+        {{ end }}
     </ul>
 </nav>

@@ -283,17 +283,36 @@ svg {
   color: var(--neutral-700);
 }
 
-.site-footer {
+.footer {
   background-color: var(--neutral-100);
   color: var(--neutral-700);
+  font-size: var(--fs-500);
 }
-.site-footer a {
+.footer__inner > * {
+  padding-block: 2rem;
+  border-block-end: 2px solid var(--neutral-200);
+}
+.footer__inner > :first-child {
+  padding-block: 0 2rem;
+}
+.footer__inner > :last-child {
+  padding-block: 2rem 0;
+  border: none;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.footer a {
   color: var(--neutral-700);
   text-decoration: none;
   font-family: "Inter", sans-serif;
   letter-spacing: 0;
 }
-.site-footer a:is(:hover, :focus) {
+.footer a:is(:hover, :focus) {
   color: var(--neutral-700);
 }
 
@@ -342,7 +361,7 @@ svg {
   --flow-space: 1rem;
   background-color: var(--brand-primary-700);
   color: var(--neutral-100);
-  padding-block: clamp(3.75rem, 15vh, 5rem);
+  padding-block: clamp(3.75rem, 4vw + 1rem, 5rem);
 }
 @media screen and (min-width: 45em) {
   .about {
@@ -372,6 +391,7 @@ svg {
 }
 .about img {
   inline-size: 100%;
+  max-inline-size: 450px;
   object-fit: cover;
   block-size: auto;
   background-color: var(--brand-primary-200);
@@ -602,7 +622,7 @@ svg {
 }
 
 .section {
-  padding-block: clamp(3.75rem, 15vh, 5rem);
+  padding-block: clamp(3.75rem, 4vw + 1rem, 5rem);
 }
 
 .mx-auto {

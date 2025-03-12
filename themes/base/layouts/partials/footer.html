@@ -1,1 +1,15 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<footer class="footer | text-center section">
+    <div class="container">
+        <div class="footer__inner">
+            <ul data-type="narrow">
+                {{ range site.Menus.main }}
+                    <li>
+                        <a href="{{ .PageRef }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+            <p class="fs-300">© 2023 Brand, Inc. • Privacy • Terms • Sitemap</p>  
+        </div>
+    </div>
+</footer>
+

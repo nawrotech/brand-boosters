@@ -36,6 +36,7 @@
 
     img {
         inline-size: 100%;
+        max-inline-size: 450px;
         object-fit: cover;
         block-size: auto;
         background-color: $about-image-background-color;

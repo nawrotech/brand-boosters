@@ -66,7 +66,7 @@ $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 
 $hero-padding-block: clamp(5rem, 10vh, 6rem);
-$section-padding-block: clamp(#{$size-10}, 15vh, #{$size-12});
+$section-padding-block: clamp(#{$size-10}, 4vw + 1rem, #{$size-12});
 
 $container-min-margin-inline: $size-5;
 $container-max-inline-size: 68.75rem;
@@ -98,12 +98,18 @@ $navigation-font-weight: $body-font-weight;
 
 
 // footer
+$footer-font-size: $font-size-500;
 $footer-background-color:  $color-neutral-100;
 $footer-text-color: $color-neutral-700;
 $footer-link-color: $footer-text-color;
 $footer-link-color-active:  $footer-text-color;
 $footer-link-font-family: $body-font-family;
 $footer-link-text-decoration: none;
+$footer-link-font-size: 1rem;
+$footer-links-gap: $size-6;
+$footer-separating-border-color: $color-neutral-200;
+$footer-separating-border-width: 2px;
+
 
 // buttons
 $button-font-family: $body-font-family;

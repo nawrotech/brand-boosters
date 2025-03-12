@@ -5,3 +5,20 @@ theme: 'base'
 disableKinds:
   - taxonomy
   - term
+menus:
+  main:
+    - name: Pricing
+      pageRef: /
+      weight: 10
+    - name: About us
+      pageRef: /#about
+      weight: 20
+    - name: Features
+      pageRef: /
+      weight: 30
+    - name: Contact Us
+      pageRef: /
+      weight: 40
+    - name: Careers
+      pageRef: /
+      weight: 50

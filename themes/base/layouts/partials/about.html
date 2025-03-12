@@ -1,0 +1,25 @@
+{{ with .Site.GetPage "landing/about"  }}
+        <section class="about sectionn">            
+            <div class="container" data-type="narrow">
+                <div class="wrapper">
+                    <div class="content | flow">
+                        <h2 class="heading-2 clr-neutral-100">{{ .Params.title }}</h2>
+                        <p>{{ .Params.description | markdownify }}</p>
+
+                        {{ with .Params.ctaButton }}
+                            <a href="{{ .href }}" class="button" data-type="{{ .type }}">{{ .text }}</a>
+                        {{ end }}
+                    </div>
+                         
+                    {{ with .Resources.Get "girl-on-phone.webp" }}
+                        <img
+                            class="mx-auto" 
+                            src="{{ .RelPermalink }}" 
+                            width="406"
+                            height="511"
+                            alt="Girl taking a photo of the landscape">
+                    {{ end }}
+                </div>  
+            </div>
+    </section>
+{{ end }}

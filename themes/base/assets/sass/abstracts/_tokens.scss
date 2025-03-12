@@ -90,7 +90,7 @@ $navigation-color: $header-color;
 $navigation-color-active: $header-color;
 $navigation-font-size: $font-size-500;
 $navigation-gap-small-screen: $size-8;
-$navigation-gap-medium-screen: $size-10;
+$navigation-gap-medium-screen: $size-9;
 
 $navigation-link-text-decoration: none;
 $navigation-font-family: $body-font-family;
@@ -152,6 +152,17 @@ $hero-flow-space: $size-6;
 $hero-heading-emphasized-text-color: $color-brand-accent-400;;
 $hero-alignement: left;
 $hero-buttons-alignement: ("left": start, "center": center, "right": end);
+
+// about
+$about-text-color: $color-neutral-100;
+$about-background-color: $color-brand-primary-700;
+$about-emphasized-text-color: $about-text-color;
+$about-flow-space-small-screen: $size-4;
+$about-flow-space-large-screen: $size-7;
+$about-split-gap-small-screen: $size-11;
+$about-split-gap-large-screen: $size-12;
+$about-image-background-color:  $color-brand-primary-200;
+// $about-image-shape:  
 
 
 

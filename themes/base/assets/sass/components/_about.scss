@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.about {
+    --flow-space: #{$about-flow-space-small-screen};
+    background-color: $about-background-color;
+    color: $about-text-color;
+
+    padding-block: $section-padding-block;
+
+    @include mq(medium) {
+        --flow-space: #{$about-flow-space-large-screen};
+        padding-block: 0;
+    }
+
+    strong {
+        color: $color-neutral-100;
+        font-weight: $font-weight-bold;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: $about-split-gap-small-screen;
+        position: relative;
+        & > * {
+            flex: 1;
+        }
+
+        @include mq(medium) {
+            flex-flow: row nowrap;
+            gap: $about-split-gap-large-screen;
+            align-items: center;
+        }
+
+    }   
+
+    img {
+        inline-size: 100%;
+        object-fit: cover;
+        block-size: auto;
+        background-color: $about-image-background-color;
+        border-start-end-radius: 1000px;
+        border-start-start-radius: 1000px;
+
+        @include mq(medium) {
+            margin-block-start: $size-5;
+        }
+       
+
+    }
+}

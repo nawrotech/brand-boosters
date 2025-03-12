@@ -2,9 +2,10 @@
 date: '2025-03-11T16:31:11+01:00'
 draft: false
 params:
-  title: 'Welcome to BrandBoosters'
-  description: 'Dedicated to boosting your brand’s visibility and success that uses the latest strategies & techniques to help you reach your target audience and achieve your goals.'
-  ctaButtons:
-    - text: 'Join now'
-    - text: 'Learn more'
+  title: 'About us'
+  description: 'BrandBoosters was founded with the mission of **helping businesses of all sizes** achieve their marketing goals by working closely with each client to **develop a customized strategy that delivers results.**'
+  ctaButton:
+    text: 'Learn more about us'
+    href: '#'
+    type: 'accent'
 ---

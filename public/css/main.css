@@ -267,7 +267,7 @@ svg {
 @media screen and (min-width: 45em) {
   .nav ul {
     flex-flow: row wrap;
-    --flex-column-gap: 3.75rem;
+    --flex-column-gap: 2.5rem;
   }
 }
 .header:has(#hamburger-menu:checked) .nav {
@@ -336,6 +336,52 @@ svg {
 .hero img {
   object-fit: cover;
   inline-size: 100%;
+}
+
+.about {
+  --flow-space: 1rem;
+  background-color: var(--brand-primary-700);
+  color: var(--neutral-100);
+  padding-block: clamp(3.75rem, 15vh, 5rem);
+}
+@media screen and (min-width: 45em) {
+  .about {
+    --flow-space: 1.75rem;
+    padding-block: 0;
+  }
+}
+.about strong {
+  color: var(--neutral-100);
+  font-weight: 700;
+}
+.about .wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 4rem;
+  position: relative;
+}
+.about .wrapper > * {
+  flex: 1;
+}
+@media screen and (min-width: 45em) {
+  .about .wrapper {
+    flex-flow: row nowrap;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.about img {
+  inline-size: 100%;
+  object-fit: cover;
+  block-size: auto;
+  background-color: var(--brand-primary-200);
+  border-start-end-radius: 1000px;
+  border-start-start-radius: 1000px;
+}
+@media screen and (min-width: 45em) {
+  .about img {
+    margin-block-start: 1.25rem;
+  }
 }
 
 .even-columns {

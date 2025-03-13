@@ -1,0 +1,18 @@
+{{ with .Site.GetPage "landing/features"  }}
+    <div class="section features">
+        <div class="container flow" data-type="narrow">
+
+            <h2 class="heading-2 text-center">{{ .Params.title }}</h2>
+
+            <div class="wrapper">
+                {{ range .Params.cards }}
+                    <article class="{{ .id }} card">
+                        <h3 class="card__heading">{{ .title }}</h3>
+                        <p>{{ .text }}</p>
+                        <a class="{{ .linkColorClass }}" href="{{ .href }}">{{ .linkText }}</a>
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+{{ end }}

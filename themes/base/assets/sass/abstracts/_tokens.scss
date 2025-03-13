@@ -107,6 +107,7 @@ $footer-link-font-family: $body-font-family;
 $footer-link-text-decoration: none;
 $footer-link-font-size: 1rem;
 $footer-links-gap: $size-6;
+$footer-copyright-gap: $size-6;
 $footer-separating-border-color: $color-neutral-200;
 $footer-separating-border-width: 2px;
 
@@ -139,15 +140,17 @@ $button-link-color-active:   $color-brand-primary-400;
 
 // cards
 $card-flow-spacing: $size-2;
-$card-padding: $size-8;
+$card-padding: $size-6;
 $card-shadow: $box-shadow-1;
 $card-border-radius: $border-radius-2;
 $card-background-default: $color-brand-primary-100;
-$card-color-default: $body-text-color;
 $card-font-family: $body-font-family;
-$card-line-height: 1.25;
-$card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-600;
+
+$card-line-height: 1.25;
+$card-color-default: $color-neutral-700;
+$card-heading-color-default: $card-color-default;
+
 
 
 // hero
@@ -168,9 +171,38 @@ $about-flow-space-large-screen: $size-7;
 $about-split-gap-small-screen: $size-11;
 $about-split-gap-large-screen: $size-12;
 $about-image-background-color:  $color-brand-primary-200;
-// $about-image-shape:  
 
 
+// features
+$features-cards-gap: $size-4;
+$features-background-color: $body-background-color;
+$featues-font-size: $body-font-size;
+
+$features-card-font-size: $font-size-500;
+$features-card-text-color: $color-neutral-400;
+$features-card-line-height: $body-line-height;
+$features-card-heading-font-size: $font-size-400;
+// $features-card-
+
+$features-card-creation-background-color: $color-brand-accent-100;
+$features-card-creation-image-color: $color-brand-accent-400;
+$features-card-creation-link-color: $color-brand-accent-700;
+$features-card-creation-link-active-color: $color-brand-accent-700;
+
+$features-card-target-background-color: $color-yellow-300;
+$features-card-target-image-color: $color-yellow-400;
+$features-card-target-link-color: $color-yellow-500;
+$features-card-target-link-active-color: $color-yellow-500;
+
+$features-card-social-background-color: $color-pink-300;
+$features-card-social-image-color: $color-pink-400;
+$features-card-social-link-color: $color-pink-500;
+$features-card-social-link-active-color: $color-pink-500;
+
+$features-card-analytics-background-color: $color-cyan-300;
+$features-card-analytics-image-color: $color-cyan-400;
+$features-card-analytics-link-color: $color-cyan-500;
+$features-card-analytics-link-active-color: $color-cyan-500;
 
 
 

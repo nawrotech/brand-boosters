@@ -2,15 +2,21 @@
 
 
 .card {
-  display: grid;
-  gap: $card-flow-spacing;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
   padding: $card-padding;
   background-color: $card-background-default;
   font-family: $card-font-family;
   color: $card-color-default;
-  line-height: $card-line-height;
   box-shadow: $card-shadow;
   border-radius: $card-border-radius;
+  block-size: 100%;
+  line-height: $card-line-height;
+
+  > :last-child {
+    margin-block-start: auto;
+  }
 
   &__heading {
     @include heading($card-heading-font-size, $card-heading-color-default);

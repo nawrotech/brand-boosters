@@ -1,0 +1,96 @@
+@use "../abstracts" as *;
+
+
+.features {
+
+    p {
+        max-inline-size: 35ch;
+    }
+
+    .wrapper {
+        display: grid;
+        gap: $features-cards-gap;
+        grid-auto-rows: 280px;
+        @include mq(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    .creation {
+        background-color: $features-card-creation-background-color;
+        @include maskBackgroundImage($features-card-creation-image-color, 
+            "/images/book.svg", 
+            "right -25px bottom -90px",
+            200px
+        );
+        
+        a {
+            color: $features-card-creation-link-color;
+        }
+
+        a:is(:hover, :active) {
+            color:  $features-card-creation-link-active-color;
+        }
+    }
+
+    .target {
+        background-color: $features-card-target-background-color;
+        @include maskBackgroundImage($features-card-target-image-color, 
+            "/images/advertising-icon.svg", 
+            "right -25px bottom -90px",
+            200px
+        );
+
+        a {
+            color: $features-card-target-link-color;
+        }
+
+        a:is(:hover, :active) {
+            color:  $features-card-target-link-active-color;
+        }
+
+        @include mq(medium) {
+            grid-column: 2 / -1;
+        }
+    }
+
+    .social {
+        background-color: $features-card-social-background-color;
+        @include maskBackgroundImage($features-card-social-image-color, 
+            "/images/social-media-icon.svg", 
+            "right -25px bottom -90px",
+            200px
+        );
+
+        a {
+            color: $features-card-social-link-color;
+        }
+
+        a:is(:hover, :active) {
+            color:  $features-card-social-link-active-color;
+        }
+
+        @include mq(medium) {
+            grid-column:1 / 3;
+        }
+    }
+    
+
+    .analytics {
+        background-color: $features-card-analytics-background-color;
+        @include maskBackgroundImage($features-card-analytics-image-color, 
+            "/images/analytics-icon.svg", 
+            "right -25px bottom -90px",
+            200px
+        );
+
+        a {
+            color: $features-card-analytics-link-color;
+        }
+
+        a:is(:hover, :active) {
+            color:  $features-card-analytics-link-active-color;
+        }
+    }
+
+}

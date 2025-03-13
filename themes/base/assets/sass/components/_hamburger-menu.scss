@@ -2,6 +2,11 @@
 
 .hamburger-menu-icon {
     stroke: $header-color;
+
+    &:hover {
+      cursor: pointer;
+    }
+
     @include mq(medium) {
       display: none;
     }

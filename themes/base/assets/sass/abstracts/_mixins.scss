@@ -33,3 +33,27 @@
   font-weight: $heading-font-weight;
   line-height: $heading-line-height;
 }
+
+@mixin maskBackgroundImage($color, $imageUrl, $position, $size) {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $color; 
+    -webkit-mask-image: url($imageUrl);
+    mask-image: url($imageUrl);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: #{$position};
+    mask-position: #{$position};
+    -webkit-mask-size: $size;
+    mask-size: $size;
+    z-index: 0;
+    pointer-events: none; 
+  }
+
+
+}

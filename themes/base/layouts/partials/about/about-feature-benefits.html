@@ -1,0 +1,30 @@
+{{ with .Site.GetPage "about/feature-benefits"  }}
+    <div class="section feature-benefits">
+        <div class="container flow">
+            <h2 class="heading-2 clr-neutral-100">{{ .Params.title }}</h2>
+            <div class="wrapper even-columns">
+                <ul class="list">
+                    {{ with .Params.benefits }}
+                        {{ range $index, $benefit := . }}
+                            {{ if eq $index 0}}
+                                <li class="cluster accent">
+                                    <span>{{ $benefit }}</span>
+                                    <span>{{ partial "icons/circle_right_arrow_stroke_icon.html" . }}</span>
+                                </li>
+                                {{ else }}
+                                <li class="cluster">
+                                    <span>{{ $benefit }}</span>
+                                    <span>{{ partial "icons/circle_right_arrow_stroke_icon.html"  . }}</span>
+                                </li>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </ul>
+                <div class="descriptions-wrapper | flow">
+                    <p>{{ .Params.description1 | markdownify }}</p>
+                    <p>{{ .Params.description2 | markdownify }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}

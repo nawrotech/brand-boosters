@@ -22,6 +22,10 @@ svg {
   block-size: $icon-default-size;
 }
 
+strong {
+  font-weight: $font-weight-bold;
+}
+
 main {
   isolation: isolate;
 }

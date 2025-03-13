@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+.feature-benefits {
+    --even-column-column-gap: #{$about-feature-benefits-column-gap};
+    --even-column-row-gap: #{$about-feature-benefits-row-gap};
+
+    --flow-space: #{$about-feature-benefits-flow-space};
+
+    --circle-background-color: #{$about-feature-benefits-icon-background-color};
+    --circle-arrow-color: #{$about-feature-benefits-icon-outline-color};
+    --circle-outline-color: #{$about-feature-benefits-icon-outline-color};
+
+    background-color: $about-feature-benefits-background-color;
+    color: $about-feature-benefits-color;
+    text-align: $about-feature-benefits-text-alignement;
+    
+    .accent {
+        --circle-background-color: #{$about-feature-benefits-icon-background-color-accent};
+        --circle-outline-color: #{$about-feature-benefits-icon-outline-color-accent};
+        --circle-arrow-color: #{$about-feature-benefits-icon-outline-color};
+        font-weight: $font-weight-bold;
+    }
+
+    svg {
+        inline-size: $about-feature-benefits-icon-size;
+        block-size: $about-feature-benefits-icon-size;
+    }
+
+    .list {
+        --cluster-justification: space-between;
+        font-family: $about-feature-benefits-list-font-family;
+        font-size: $about-feature-benefits-list-font-size;
+        font-weight: $about-feature-benefits-list-font-weight;
+    }
+
+    li {
+        padding-block: $about-feature-benefits-list-elements-padding-block;
+        border-bottom: $about-feature-benefits-list-elements-separating-line;
+    }
+
+    li:first-of-type {
+        padding-block-start: 0;
+      
+    }
+
+    li:last-of-type {
+        padding-block-end: 0;
+        border: none;
+    }
+
+    .descriptions-wrapper {
+        --flow-space: #{$about-feature-benefits-descriptions-flow-space};
+    }
+  
+}

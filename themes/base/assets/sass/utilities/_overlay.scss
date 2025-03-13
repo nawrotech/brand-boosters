@@ -1,0 +1,8 @@
+.overlay {
+    border-image: fill 1 linear-gradient(
+        rgba(0, 0, 0, var(--overlay-intensity, 0.2)), 
+        rgba(0, 0, 0, var(--overlay-intensity, 0.2))
+    );
+    -webkit-mask-image: radial-gradient(circle, white 100%, transparent 0);
+    mask-image: radial-gradient(circle, white 100%, transparent 0);
+}

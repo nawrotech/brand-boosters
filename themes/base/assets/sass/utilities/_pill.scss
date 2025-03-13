@@ -1,0 +1,5 @@
+@use "../abstracts" as *;
+
+.pill {
+    border-radius: $border-radius-pill;
+}

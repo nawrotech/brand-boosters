@@ -2,6 +2,7 @@
 
 
 .features {
+    --flow-space: #{$features-flow-space};
 
     p {
         max-inline-size: 35ch;

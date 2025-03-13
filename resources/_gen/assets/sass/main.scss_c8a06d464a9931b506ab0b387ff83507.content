@@ -180,6 +180,9 @@ svg {
   color: var(--brand-primary-400);
 }
 
+.features {
+  --flow-space: 2rem;
+}
 .features p {
   max-inline-size: 35ch;
 }
@@ -350,7 +353,7 @@ svg {
 
 .heading-2 {
   font-size: var(--fs-800);
-  color: var(--neutral-400);
+  color: var(--brand-primary-700);
   font-family: "Montserrat", sans-serif;
   text-transform: none;
   letter-spacing: 0;

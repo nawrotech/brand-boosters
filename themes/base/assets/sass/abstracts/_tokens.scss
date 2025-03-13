@@ -56,7 +56,7 @@ $heading-1-font-size: $font-size-900;
 $heading-1-color: $color-brand-primary-700;
 
 $heading-2-font-size: $font-size-800;
-$heading-2-color: $heading-color-default;
+$heading-2-color: $color-brand-primary-700;
 
 $heading-3-font-size: $font-size-700;
 $heading-3-color: $color-neutral-100;
@@ -174,15 +174,17 @@ $about-image-background-color:  $color-brand-primary-200;
 
 
 // features
+$features-flow-space: $size-8;
 $features-cards-gap: $size-4;
 $features-background-color: $body-background-color;
 $featues-font-size: $body-font-size;
+
 
 $features-card-font-size: $font-size-500;
 $features-card-text-color: $color-neutral-400;
 $features-card-line-height: $body-line-height;
 $features-card-heading-font-size: $font-size-400;
-// $features-card-
+
 
 $features-card-creation-background-color: $color-brand-accent-100;
 $features-card-creation-image-color: $color-brand-accent-400;

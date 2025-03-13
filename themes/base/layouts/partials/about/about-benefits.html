@@ -1,0 +1,22 @@
+{{ with .Site.GetPage "about/benefits"  }}
+    <section class="about-benefits section">
+        <div class="container | flow">
+            <div class="cluster">
+                {{ with .Resources.Get "phone-in-hand.webp" }}
+                <img
+                    class="round" 
+                    src="{{ .RelPermalink }}" 
+                    width="400"
+                    height="400"
+                    alt="Hand holding phone displaying displaying motivational words">
+                {{ end }}
+
+                <div class="content | flow">
+                    <h2 class="heading-2">{{ .Params.title }}</h2>
+                    <p>{{ .Params.description }}</p>
+                </div>
+            </div>
+   
+        </div>
+    </section>
+{{ end }}

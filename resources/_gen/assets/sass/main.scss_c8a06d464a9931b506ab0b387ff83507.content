@@ -139,6 +139,10 @@ svg {
   block-size: 4rem;
 }
 
+main {
+  isolation: isolate;
+}
+
 .button {
   display: inline-block;
   align-content: center;
@@ -592,6 +596,23 @@ svg {
 }
 .about-hero .button {
   display: block;
+}
+
+.about-benefits {
+  --cluster-gap: 3.75rem;
+  background-color: var(--brand-primary-100);
+  color: var(--neutral-400);
+  text-align: left;
+  font-size: var(--fs-500);
+}
+.about-benefits .cluster > * {
+  flex: 1;
+}
+.about-benefits img {
+  max-inline-size: 400px;
+  block-size: auto;
+  object-fit: cover;
+  background-color: var(--brand-primary-200);
 }
 
 .even-columns {

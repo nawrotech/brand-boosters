@@ -18,6 +18,7 @@ $letter-spacing-loose: 0;
 
 $border-radius-1: $size-2;
 $border-radius-2: $size-4;
+$border-radius-pill: 700vh;
 
 $box-shadow-1: 0px 6px 5px rgb(0, 0, 0, 0.012),
   0px 22px 18px rgb(0, 0, 0, 0.018), 0px 100px 80px rgb(0, 0, 0, 0.03);
@@ -206,5 +207,13 @@ $features-card-analytics-image-color: $color-cyan-400;
 $features-card-analytics-link-color: $color-cyan-500;
 $features-card-analytics-link-active-color: $color-cyan-500;
 
+// abou-hero
+$about-hero-flow-space: $size-10;
+$about-hero-background-color: $color-neutral-100;
+$about-hero-image-overlay-intensity: 0.15;
+$about-hero-text-alignement: center;
+$about-hero-image-border-radius: $border-radius-2;
+$about-hero-padding-block-small-screen: $size-13;
+$about-hero-padding-block-large-screen: $size-16;
 
 

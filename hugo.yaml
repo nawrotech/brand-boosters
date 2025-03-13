@@ -11,10 +11,10 @@ menus:
       pageRef: /
       weight: 10
     - name: About us
-      pageRef: /#about
+      pageRef: /about
       weight: 20
     - name: Features
-      pageRef: /
+      pageRef: /features
       weight: 30
     - name: Contact Us
       pageRef: /

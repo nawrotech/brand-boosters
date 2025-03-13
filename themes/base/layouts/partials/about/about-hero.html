@@ -1,0 +1,16 @@
+{{ with .Site.GetPage "about/hero"  }}
+    <section class="section about-hero">
+        <div class="container | flow">
+            <h1 class="heading-1">{{ .Params.title }}</h1>
+            
+            <div class="image overlay">
+                {{ with .Params.ctaButton }}
+                    <button data-type="accent" class="button mx-auto pill">
+                        {{ .text }}
+                    </button>
+                {{ end }}
+            </div>
+         
+        </div>
+    </section>
+{{ end }}

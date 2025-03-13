@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.about-hero {
+    --flow-space: #{$about-hero-flow-space};
+    --overlay-intensity: #{$about-hero-image-overlay-intensity};
+
+    background-color: $about-hero-background-color;
+    text-align: $about-hero-text-alignement;
+
+    .image {
+        border-radius: $about-hero-image-border-radius;
+        background: url("/images/video-placeholder.webp");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-block: $about-hero-padding-block-large-screen;
+        
+        @include mq(medium) {
+            padding-block: 15rem;
+        }
+        
+    }
+    
+    .button {
+        display: block;
+    }
+}

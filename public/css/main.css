@@ -396,6 +396,7 @@ svg {
 .nav {
   position: fixed;
   inset-inline: 0;
+  z-index: 1;
   inset-block-start: 112px;
   transition: all 0.5s ease-in;
   background-color: var(--brand-primary-100);
@@ -568,6 +569,29 @@ svg {
   .about img {
     margin-block-start: 1.25rem;
   }
+}
+
+.about-hero {
+  --flow-space: 3.75rem;
+  --overlay-intensity: 0.15;
+  background-color: var(--neutral-100);
+  text-align: center;
+}
+.about-hero .image {
+  border-radius: 1rem;
+  background: url("/images/video-placeholder.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 6rem;
+}
+@media screen and (min-width: 45em) {
+  .about-hero .image {
+    padding-block: 15rem;
+  }
+}
+.about-hero .button {
+  display: block;
 }
 
 .even-columns {
@@ -1552,6 +1576,21 @@ svg {
 
 .hidden {
   display: none;
+}
+
+.round {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.pill {
+  border-radius: 700vh;
+}
+
+.overlay {
+  border-image: fill 1 linear-gradient(rgba(0, 0, 0, var(--overlay-intensity, 0.2)), rgba(0, 0, 0, var(--overlay-intensity, 0.2)));
+  -webkit-mask-image: radial-gradient(circle, white 100%, transparent 0);
+  mask-image: radial-gradient(circle, white 100%, transparent 0);
 }
 
 /*# sourceMappingURL=main.css.map */

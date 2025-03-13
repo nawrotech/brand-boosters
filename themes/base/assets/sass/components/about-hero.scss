@@ -13,10 +13,10 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding-block: $about-hero-padding-block-large-screen;
+        padding-block: $about-hero-padding-block-small-screen;
         
         @include mq(medium) {
-            padding-block: 15rem;
+            padding-block: $about-hero-padding-block-large-screen;
         }
         
     }

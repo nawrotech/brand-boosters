@@ -396,6 +396,7 @@ svg {
 .nav {
   position: fixed;
   inset-inline: 0;
+  z-index: 1;
   inset-block-start: 112px;
   transition: all 0.5s ease-in;
   background-color: var(--brand-primary-100);
@@ -582,7 +583,7 @@ svg {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-block: 15rem;
+  padding-block: 6rem;
 }
 @media screen and (min-width: 45em) {
   .about-hero .image {

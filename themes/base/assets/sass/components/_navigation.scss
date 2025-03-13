@@ -3,6 +3,7 @@
 .nav {
   position: fixed;
   inset-inline: 0;
+  z-index: 1;
   inset-block-start: $header-block-size;
   transition: all .5s ease-in;
   background-color: $header-background-color;

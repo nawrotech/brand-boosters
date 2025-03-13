@@ -13,10 +13,8 @@
   }
 
   &__inner {
-    display: flex;
-    gap: $size-4;
-    align-items: $header-alignment;
-    justify-content: $header-jusitifcation-small-screens;
+    --cluster-space: 2rem;
+    --cluster-justification: #{$header-jusitifcation-small-screens};
     background-color:  $header-background-color;
 
     @include mq(medium) {

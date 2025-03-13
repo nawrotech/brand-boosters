@@ -1,14 +1,27 @@
 <footer class="footer | text-center section">
     <div class="container">
         <div class="footer__inner">
-            <ul data-type="narrow">
+            <ul data-type="narrow" class="links cluster">
                 {{ range site.Menus.main }}
                     <li>
                         <a href="{{ .PageRef }}">{{ .Name }}</a>
                     </li>
                 {{ end }}
             </ul>
-            <p class="fs-300">© 2023 Brand, Inc. • Privacy • Terms • Sitemap</p>  
+            <div class="cluster fs-300 copyright">
+                <p>© 2023 Brand, Inc.</p>
+                <ul class="cluster">
+                    <li>
+                        Privacy
+                    </li>
+                    <li>
+                        Terms
+                    </li>
+                    <li>
+                        Sitemap
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>

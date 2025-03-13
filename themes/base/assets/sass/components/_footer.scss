@@ -8,6 +8,10 @@
 
   &__inner {
       & > * {
+        list-style: none;
+      }
+
+      & > * {
         padding-block: 2rem;
         border-block-end: $footer-separating-border-width solid $footer-separating-border-color;
       }
@@ -22,14 +26,14 @@
       }
   }
 
+  .links {
+    --cluster-gap: #{$footer-links-gap};
+    --cluster-justification: center;
+  }
 
-  ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: $footer-links-gap;
-
+  .copyright {
+    --cluster-gap: #{$footer-copyright-gap};
+    --cluster-justification: center;
   }
 
   a {

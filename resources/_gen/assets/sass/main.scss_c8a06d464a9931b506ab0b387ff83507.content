@@ -662,13 +662,35 @@ main {
 }
 
 .about-testimonial {
+  --flow-space: 2rem;
   --cluster-justification: $about-testimonial-stars-justification;
+  --sidebar-column-gap: 3.75rem;
+  --sidebar-row-gap: 2rem;
+  --sidebar-justification: left;
+  --sidebar-width: 16rem;
+  --sidebar-not-min-inline-size: 55%;
   background-color: var(--brand-primary-100);
   color: var(--neutral-700);
 }
 .about-testimonial .star-icon {
-  fill: gold;
+  fill: var(--yellow-400);
   inline-size: 26px;
+  block-size: 26px;
+}
+.about-testimonial blockquote {
+  --flow-space: 1rem;
+  font-size: var(--fs-700);
+}
+.about-testimonial .author-wrapper {
+  --flow-space: 1.5rem;
+}
+.about-testimonial img {
+  block-size: auto;
+  inline-size: 100%;
+  object-fit: cover;
+  border-start-end-radius: 123.25px;
+  border-start-start-radius: 123.25px;
+  border-end-end-radius: 123.25px;
 }
 
 .even-columns {
@@ -700,13 +722,17 @@ main {
 .with-sidebar {
   display: flex;
   flex-flow: row wrap;
+  align-items: var(--sidebar-alignement, center);
+  justify-content: var(--sidebar-justification, center);
+  column-gap: var(--sidebar-column-gap, 1rem);
+  row-gap: var(--sidebar-row-gap, 1rem);
 }
 .with-sidebar .sidebar {
-  flex: 1 1 20rem;
+  flex: var(--sidebar-grow, 0) 1 var(--sidebar-width, 15rem);
 }
 .with-sidebar .not-sidebar {
-  flex: 0 1 999;
-  min-inline-size: 50%;
+  flex: 999 0 0;
+  min-inline-size: var(--sidebar-not-min-inline-size, 50%);
 }
 
 .clr-neutral-100 {

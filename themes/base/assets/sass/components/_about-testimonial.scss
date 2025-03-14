@@ -1,8 +1,15 @@
 @use "../abstracts" as *;
 
 .about-testimonial {
+    --flow-space: #{$about-testimonial-flow-space};
+
     --cluster-justification: $about-testimonial-stars-justification;
 
+    --sidebar-column-gap: #{$about-testimonial-sidebar-column-gap};
+    --sidebar-row-gap: #{$about-testimonial-sidebar-row-gap};
+    --sidebar-justification: #{$about-testimonial-sidebar-justification};
+    --sidebar-width: #{$about-testimonial-sidebar-width};
+    --sidebar-not-min-inline-size: #{$about-testimonial-sidebar-not-min-inline-size};
 
     background-color: $about-testimonial-background-color;
     color: $about-testimonial-text-color;
@@ -10,6 +17,25 @@
     .star-icon {
         fill: $about-testimonial-star-icon-color;
         inline-size: $about-testimonial-star-icon-size;
+        block-size: $about-testimonial-star-icon-size;
+    }
+
+    blockquote {
+        --flow-space: #{$about-testimonial-blockquote-flow-space};
+        font-size: $about-testimonial-blockquote-font-size;
+    }
+
+    .author-wrapper {
+        --flow-space: #{$about-testimonial-author-wrapper-flow-space};
+    }
+
+    img {
+        block-size: auto;
+        inline-size: 100%;
+        object-fit: cover;
+        border-start-end-radius: 123.25px;
+        border-start-start-radius: 123.25px;
+        border-end-end-radius: 123.25px;
     }
 
 }

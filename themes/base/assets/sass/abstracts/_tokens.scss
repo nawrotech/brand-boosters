@@ -252,13 +252,27 @@ $about-feature-benefits-icon-background-color-accent: $color-brand-accent-400;
 $about-feature-benefits-icon-outline-color-accent: $color-brand-accent-400;
 
 // about testimonial
+$about-testimonial-flow-space: $size-8;
+$about-testimonial-blockquote-flow-space: $size-4;
+$about-testimonial-author-wrapper-flow-space: $size-6;
+
+$about-testimonial-sidebar-column-gap: $size-10;
+$about-testimonial-sidebar-row-gap: $size-8;
+$about-testimonial-sidebar-justification: left;
+$about-testimonial-sidebar-width: 16rem;
+$about-testimonial-sidebar-not-min-inline-size: 55%;
+
+
+
+// $size-11;
 $about-testimonial-background-color: $color-brand-primary-100;
 $about-testimonial-text-color: $color-neutral-700;
-$about-testimonial-star-icon-color: gold;
+
+$about-testimonial-star-icon-color: $color-yellow-400;
 $about-testimonial-star-icon-size: 26px;
 $about-testimonial-stars-justification: left;
 
-$about-testimonial-flow-space: $size-4;
+$about-testimonial-blockquote-font-size: $font-size-700;
 $about-testimonial-color: $color-neutral-400;
 
 $about-testimonial-author-name-font-weight: $font-weight-bold;

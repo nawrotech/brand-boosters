@@ -3,9 +3,9 @@
 
 
         <section class="section about-testimonial">
-            <div class="container">
-                <article>
-                    <div class="content | flow">
+            <div class="container" data-type="narrow">
+                <article class="with-sidebar">
+                    <div class="content | flow not-sidebar">
                         <h2>{{ .Params.title }}</h2>
 
                         <div class="cluster">
@@ -17,19 +17,21 @@
                         <blockquote>"{{ .Params.description }}"</blockquote>
 
                         <div class="author-wrapper">
-                            <p>{{ .Params.author  }}</p>
+                            <p class="fw-bold">{{ .Params.author  }}</p>
                             <p>{{ .Params.position }}</p>               
                         </div>
                     </div>
-
                     {{ with .Resources.Get "girl-smiling.webp" }}
                         <img
+                            class="sidebar"
                             src="{{ .RelPermalink }}" 
                             loading="lazy"
                             width="250"
                             height="370"
                             alt="Smiling woman wearing red sweater">
                     {{ end }}
+                  
+               
                 </article>
             </div>
         </section>

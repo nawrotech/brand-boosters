@@ -1,0 +1,15 @@
+
+
+.with-sidebar {
+    display: flex;
+    flex-flow: row wrap;
+
+    .sidebar {
+        flex: 1 1 20rem;
+    }
+    
+    .not-sidebar {
+        flex: 0 1 999;
+        min-inline-size: 50%; // where the wrapping is happening
+    }
+}

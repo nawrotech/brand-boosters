@@ -661,6 +661,16 @@ main {
   --flow-space: 1rem;
 }
 
+.about-testimonial {
+  --cluster-justification: $about-testimonial-stars-justification;
+  background-color: var(--brand-primary-100);
+  color: var(--neutral-700);
+}
+.about-testimonial .star-icon {
+  fill: gold;
+  inline-size: 26px;
+}
+
 .even-columns {
   display: grid;
   column-gap: var(--even-column-column-gap, 1rem);
@@ -685,6 +695,18 @@ main {
   gap: var(--cluster-gap, 1rem);
   justify-content: var(--cluster-justification, center);
   align-items: var(--cluster-alignement, center);
+}
+
+.with-sidebar {
+  display: flex;
+  flex-flow: row wrap;
+}
+.with-sidebar .sidebar {
+  flex: 1 1 20rem;
+}
+.with-sidebar .not-sidebar {
+  flex: 0 1 999;
+  min-inline-size: 50%;
 }
 
 .clr-neutral-100 {

@@ -1,4 +1,5 @@
 ---
+headless: true
 date: '2025-03-13T11:28:42+01:00'
 draft: false
 params:

@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.about-testimonial {
+    --cluster-justification: $about-testimonial-stars-justification;
+
+
+    background-color: $about-testimonial-background-color;
+    color: $about-testimonial-text-color;
+
+    .star-icon {
+        fill: $about-testimonial-star-icon-color;
+        inline-size: $about-testimonial-star-icon-size;
+    }
+
+}

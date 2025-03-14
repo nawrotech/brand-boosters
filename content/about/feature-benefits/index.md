@@ -1,6 +1,7 @@
 ---
 date: '2025-03-13T16:55:36+01:00'
 draft: false
+headless: true
 params:
   title: 'Feature benefits'
   description1: 'BrandBoosters’ content creation service is designed to help you **engage with your audience** and drive engagement. Our team of creatives produces **high-quality content** that resonates with your target audience and helps you **stand out from the competition.**'

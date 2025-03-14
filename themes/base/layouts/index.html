@@ -1,7 +1,14 @@
 {{ define "main" }}
-    
-   {{ partial "hero.html" . }}
-   {{ partial "about.html" . }}
-   {{ partial "features.html" . }}
-    
+
+
+   {{/*  {{ printf "%#v" (.Resources.GetMatch .) }}
+
+   {{ with site.GetPage "about" }}
+      <p>About is a {{ .Kind }}</p>
+   {{ end }}  */}}
+
+   {{ partial "index/hero.html" . }}
+   {{ partial "index/about.html" . }}
+   {{ partial "index/features.html" . }}
+
 {{ end }}

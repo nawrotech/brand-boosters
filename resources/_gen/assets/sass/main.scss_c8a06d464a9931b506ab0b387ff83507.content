@@ -693,6 +693,35 @@ main {
   border-end-end-radius: 123.25px;
 }
 
+.about-offer {
+  --flow-space: 3.75rem;
+  --grid-auto-fit-min-width: 320px;
+  --grid-auto-fit-gap: 2rem;
+  background-color: var(--neutral-100);
+  color: var(--neutral-400);
+  text-align: left;
+}
+.about-offer h3 {
+  font-size: var(--fs-700);
+  font-weight: 700;
+  color: var(--neutral-400);
+}
+.about-offer article {
+  --flow-space: 0.5rem;
+}
+.about-offer .text-icon {
+  fill: var(--brand-accent-400);
+}
+.about-offer .speech-icon {
+  fill: var(--pink-400);
+}
+.about-offer .graph-icon {
+  fill: var(--cyan-400);
+}
+.about-offer .arrow-icon {
+  fill: var(--yellow-400);
+}
+
 .even-columns {
   display: grid;
   column-gap: var(--even-column-column-gap, 1rem);
@@ -707,8 +736,8 @@ main {
 
 .grid-auto-fit {
   display: grid;
-  gap: var(--grid-gap, 1.5rem);
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: var(--grid-auto-fit-gap, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-auto-fit-min-width, 250px), 100%), 1fr));
 }
 
 .cluster {

@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+.about-offer {
+    --flow-space: #{$about-offer-flow-space};
+    --grid-auto-fit-min-width: #{$about-offer-grid-auto-fit-min-width};
+    --grid-auto-fit-gap: #{$about-offer-grid-auto-fit-gap};
+
+    background-color: $about-offer-background-color;
+    color: $about-offer-text-color;
+    text-align: $about-offer-text-alignement;
+
+    h3 {
+        font-size: $about-offer-card-heading-font-size;
+        font-weight: $about-offer-card-heading-font-weight;
+        color: $about-offer-card-heading-color;
+    }
+
+    article {
+        --flow-space: #{$about-offer-card-flow-space};
+    }
+
+    .text-icon {
+        fill: $about-offer-text-icon-color;
+    }
+
+    .speech-icon {
+        fill: $about-offer-speech-icon-color;
+    }
+
+    .graph-icon {
+        fill: $about-offer-graph-icon-color;
+    }
+
+    .arrow-icon {
+        fill : $about-offer-arrow-icon-color;
+    }
+
+
+
+}

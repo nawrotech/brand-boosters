@@ -1,0 +1,17 @@
+{{ with .Site.GetPage "about/offer"  }}
+    <section class="section about-offer">
+        <div class="container flow" data-type="narrow">
+            <h2 class="heading-2">{{ .Params.title }}</h2>
+
+            <div class="grid-auto-fit">
+                {{ range sort .Params.cards "weight" }}          
+                    <article class="flow">
+                        {{ partial (printf "%s" .icon)  }}
+                        <h3>{{ .heading }}</h3>
+                        <p>{{ .text }}</p>
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}

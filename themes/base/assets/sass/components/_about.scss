@@ -1,6 +1,10 @@
 @use "../abstracts" as *;
 
 .about {
+    --even-columns-alignement: center;
+    --even-columns-column-gap: #{$about-even-columns-column-gap};
+    --even-columns-row-gap:  #{$about-even-columns-row-gap};
+
     --flow-space: #{$about-flow-space-small-screen};
     background-color: $about-background-color;
     color: $about-text-color;
@@ -17,22 +21,6 @@
         font-weight: $font-weight-bold;
     }
 
-    .wrapper {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: $about-split-gap-small-screen;
-        position: relative;
-        & > * {
-            flex: 1;
-        }
-
-        @include mq(medium) {
-            flex-flow: row nowrap;
-            gap: $about-split-gap-large-screen;
-            align-items: center;
-        }
-
-    }   
 
     img {
         inline-size: 100%;

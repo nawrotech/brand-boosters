@@ -5,26 +5,12 @@
     --flow-space: #{$hero-flow-space};
     text-align: $hero-alignement;
 
+    --even-columns-column-gap: #{$hero-even-columns-column-gap};
+    --even-columns-row-gap: #{$hero-even-columns-row-gap};
+    --even-columns-alignement: center;
+
     strong {
         color: $hero-heading-emphasized-text-color
-    }
-
-    .wrapper {
-        display: flex;
-        gap: $hero-splitting-gap-small-screen;
-        align-items: center;
-        flex-flow: column nowrap;
-
-        & > * {
-            flex: 1;
-        }
-
-        @include mq(medium) {
-            flex-direction: row;
-            gap: $hero-splitting-gap-medium-screen;
-        }
-
-
     }
 
     .buttons-group {

@@ -1,17 +1,17 @@
 {{ with .Site.GetPage "about/benefits"  }}
     <section class="about-benefits section">
         <div class="container | flow">
-            <div class="cluster">
+            <div class="with-sidebar">
                 {{ with .Resources.Get "phone-in-hand.webp" }}
-                    <img
-                        class="round" 
+                    <img 
+                        class="round sidebar" 
                         src="{{ .RelPermalink }}" 
                         width="400"
                         height="400"
                         alt="Hand holding phone displaying displaying motivational words">
                 {{ end }}
 
-                <div class="content | flow">
+                <div class="content flow not-sidebar">
                     <h2 class="heading-2">{{ .Params.title }}</h2>
                     <p>{{ .Params.description }}</p>
                 </div>

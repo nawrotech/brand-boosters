@@ -1,20 +1,17 @@
 @use "../abstracts" as *;
 
 .about-benefits {
-    --cluster-gap: #{$about-benefits-gap};
+    --sidebar-column-gap: #{$about-benefits-column-gap};
+    --sidebar-row-gap: #{$about-benefits-row-gap};
+    --sidebar-width:  #{$about-benefits-image-inline-size};
+    --sidebar-not-min-inline-size: #{$about-benefits-sidebar-not-min-inline-size};
+
     background-color: $about-benefits-background-color;
     color: $about-benefits-text-color;
     text-align: $about-benefits-text-alignement;
     font-size: $about-benefits-font-size;
-    .cluster {
-        & > * {
-            flex: 1;
-        }
-    }
 
-  
     img {
-        max-inline-size: 400px;
         block-size: auto;
         object-fit: cover;
         background-color: $about-benefits-image-background-color;

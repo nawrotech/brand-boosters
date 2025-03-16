@@ -1,8 +1,8 @@
 @use "../abstracts" as *;
 
 .feature-benefits {
-    --even-column-column-gap: #{$about-feature-benefits-column-gap};
-    --even-column-row-gap: #{$about-feature-benefits-row-gap};
+    --even-columns-column-gap: #{$about-feature-benefits-column-gap};
+    --even-columns-row-gap: #{$about-feature-benefits-row-gap};
 
     --flow-space: #{$about-feature-benefits-flow-space};
 

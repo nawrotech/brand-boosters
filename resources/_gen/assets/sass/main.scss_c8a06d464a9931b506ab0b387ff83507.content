@@ -503,24 +503,12 @@ main {
 .hero {
   --flow-space: 1.5rem;
   text-align: left;
+  --even-columns-column-gap: 2.5rem;
+  --even-columns-row-gap: 2.5rem;
+  --even-columns-alignement: center;
 }
 .hero strong {
   color: var(--brand-accent-400);
-}
-.hero .wrapper {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-  flex-flow: column nowrap;
-}
-.hero .wrapper > * {
-  flex: 1;
-}
-@media screen and (min-width: 45em) {
-  .hero .wrapper {
-    flex-direction: row;
-    gap: 3.75rem;
-  }
 }
 .hero .buttons-group {
   display: flex;
@@ -533,6 +521,9 @@ main {
 }
 
 .about {
+  --even-columns-alignement: center;
+  --even-columns-column-gap: 4rem;
+  --even-columns-row-gap: 5rem;
   --flow-space: 1rem;
   background-color: var(--brand-primary-700);
   color: var(--neutral-100);
@@ -547,22 +538,6 @@ main {
 .about strong {
   color: var(--neutral-100);
   font-weight: 700;
-}
-.about .wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 4rem;
-  position: relative;
-}
-.about .wrapper > * {
-  flex: 1;
-}
-@media screen and (min-width: 45em) {
-  .about .wrapper {
-    flex-flow: row nowrap;
-    gap: 5rem;
-    align-items: center;
-  }
 }
 .about img {
   inline-size: 100%;
@@ -603,25 +578,24 @@ main {
 }
 
 .about-benefits {
-  --cluster-gap: 3.75rem;
+  --sidebar-column-gap: 3.75rem;
+  --sidebar-row-gap: 2rem;
+  --sidebar-width: 15rem;
+  --sidebar-not-min-inline-size: 40%;
   background-color: var(--brand-primary-100);
   color: var(--neutral-400);
   text-align: left;
   font-size: var(--fs-500);
 }
-.about-benefits .cluster > * {
-  flex: 1;
-}
 .about-benefits img {
-  max-inline-size: 400px;
   block-size: auto;
   object-fit: cover;
   background-color: var(--brand-primary-200);
 }
 
 .feature-benefits {
-  --even-column-column-gap: 5rem;
-  --even-column-row-gap: 2.5rem;
+  --even-columns-column-gap: 5rem;
+  --even-columns-row-gap: 2.5rem;
   --flow-space: 4rem;
   --circle-background-color: transparent;
   --circle-arrow-color: var(--neutral-100);
@@ -841,7 +815,7 @@ main {
   display: grid;
   column-gap: var(--even-columns-column-gap, 1rem);
   row-gap: var(--even-columns-row-gap, 1rem);
-  align-items: stretch;
+  align-items: var(--even-columns-alignement, stretch);
 }
 @media screen and (min-width: 45em) {
   .even-columns {
@@ -873,7 +847,7 @@ main {
   row-gap: var(--sidebar-row-gap, 1rem);
 }
 .with-sidebar .sidebar {
-  flex: var(--sidebar-grow, 0) 1 var(--sidebar-width, 15rem);
+  flex: var(--sidebar-grow, 0) 1 var(--sidebar-width, 20rem);
 }
 .with-sidebar .not-sidebar {
   flex: 999 0 0;

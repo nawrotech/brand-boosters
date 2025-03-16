@@ -1,7 +1,7 @@
 {{ with .Site.GetPage "index/about"  }}
         <section class="about sectionn">            
             <div class="container" data-type="narrow">
-                <div class="wrapper">
+                <div class="even-columns">
                     <div class="content | flow">
                         <h2 class="heading-2 clr-neutral-100">{{ .Params.title }}</h2>
                         <p>{{ .Params.description | markdownify }}</p>

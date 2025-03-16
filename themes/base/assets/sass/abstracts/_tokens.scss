@@ -155,8 +155,8 @@ $card-heading-color-default: $card-color-default;
 
 
 // hero
-$hero-splitting-gap-small-screen: $size-9;
-$hero-splitting-gap-medium-screen: $size-10;
+$hero-even-columns-row-gap: $size-9;
+$hero-even-columns-column-gap: $size-9;
 $hero-buttons-group-gap: $size-4;
 $hero-flow-space: $size-6;
 $hero-heading-emphasized-text-color: $color-brand-accent-400;;
@@ -169,8 +169,9 @@ $about-background-color: $color-brand-primary-700;
 $about-emphasized-text-color: $about-text-color;
 $about-flow-space-small-screen: $size-4;
 $about-flow-space-large-screen: $size-7;
-$about-split-gap-small-screen: $size-11;
-$about-split-gap-large-screen: $size-12;
+
+$about-even-columns-column-gap: $size-11;
+$about-even-columns-row-gap: $size-12;
 $about-image-background-color:  $color-brand-primary-200;
 
 
@@ -218,7 +219,11 @@ $about-hero-padding-block-large-screen: $size-16;
 
 
 // about-benefits
-$about-benefits-gap: $size-10;
+$about-benefits-column-gap: $size-10;
+$about-benefits-row-gap: $size-8;
+$about-benefits-image-inline-size: $size-16;
+$about-benefits-sidebar-not-min-inline-size: 40%;
+
 $about-benefits-font-size: $body-font-size;
 $about-benefits-text-alignement: left;
 $about-benefits-image-background-color: $color-brand-primary-200;

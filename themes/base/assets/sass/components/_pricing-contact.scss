@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.pricing-contact {
+    --flow-space: 2rem;
+    text-align: center;
+    background-color: $color-brand-accent-100;
+    font-size: $font-size-500;
+
+    p {
+        max-inline-size: 58ch;
+    }
+  
+    .button {
+        --flow-space: 2.5rem;
+    }
+
+}

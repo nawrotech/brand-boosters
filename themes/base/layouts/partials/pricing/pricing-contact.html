@@ -1,0 +1,14 @@
+{{ with .Site.GetPage "pricing/contact"  }}
+    <section class="section pricing-contact">
+        <div class="container flow" data-type="narrow">
+       
+            <h2 class="heading-2">{{ .Params.title }}</h2>
+            <p class="mx-auto">{{ .Params.description }}</p>
+            <a href="#" data-type="primary" class="button">
+                {{ .Params.ctaButtonText }}
+            </a>
+            
+        </div>
+    </section>
+
+{{ end }}

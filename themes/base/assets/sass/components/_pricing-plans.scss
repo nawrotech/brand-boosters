@@ -1,0 +1,60 @@
+@use "../abstracts" as *;
+
+.pricing-plans {
+
+    text-align: $pricing-plans-text-alignement;
+    background-color: $pricing-plans-background-color;
+    color: $pricing-plans-text-color;
+    article {
+        --flow-space: #{$pricing-plans-plan-flow-space-1};
+        padding: $pricing-plans-plan-padding;
+        border-radius: $pricing-plans-plan-border-radius;
+        
+        background-color: $pricing-plans-plan-background-color;
+
+        display: flex;
+        flex-flow: column nowrap;
+
+        @include mq(medium) {
+            min-block-size: 642px;
+        }
+    
+    }
+
+    ul {
+        --flow-space: #{$pricing-plans-plan-flow-space-2};
+        text-align: left;
+        list-style: none;
+        display: grid;
+        gap: $size-4;
+    }
+
+    strong {
+        font-weight: $pricing-plans-plan-price-font-weight;
+        font-size: $pricing-plans-plan-price-font-size;
+        font-family: $pricing-plans-plan-font-family;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: $size-4;
+
+    }
+
+    .checkmark-icon {
+        block-size: 1.5rem;
+        inline-size: 1.5rem;
+        min-inline-size: 1.5rem;
+        fill: $pricing-plans-checkmark-icon-color;
+    }
+
+    .button {       
+        --flow-space: #{$pricing-plans-plan-flow-space-2};
+       
+        @include mq(medium) {
+            --flow-space: auto;
+        }
+
+    }
+}

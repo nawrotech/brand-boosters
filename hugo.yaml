@@ -8,7 +8,7 @@ disableKinds:
 menus:
   main:
     - name: Pricing
-      pageRef: /
+      pageRef: /pricing
       weight: 10
     - name: About us
       pageRef: /about

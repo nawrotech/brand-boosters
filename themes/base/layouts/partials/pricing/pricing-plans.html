@@ -1,0 +1,35 @@
+{{ with .Site.GetPage "pricing/plans"  }}
+    <section class="section pricing-plans">
+        <div class="container flow" data-type="narrow">
+            <h1 class="heading-1 margin-block-end-9">{{ .Params.title }}</h1>
+            <div class="even-columns">
+                {{ range .Params.plans }}
+                    <article class="flow">
+                        <p>{{ .type }}</p>
+                        <p><strong>{{ .currency }}{{ .price }}</strong>/month</p>
+                        <p class="fs-300">{{ .description }}</p>
+
+                        <ul>
+                            {{ range .features }}
+                                <li>
+                                    <span>{{ partial "icons/checkmark_icon.html" . }}</span>
+                                    <span>{{ . }}</span>
+                                </li>
+                            {{ end }}
+                        </ul>
+
+                        <a href="#" class="button" data-type="primary">
+                            {{ .ctaButtonText }}
+                        </a>
+                    </article>
+                {{ end }}
+            </div>
+    
+        </div>
+    </section>
+
+  
+
+    
+
+{{ end }}

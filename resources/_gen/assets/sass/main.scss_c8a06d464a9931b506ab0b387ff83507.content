@@ -722,10 +722,61 @@ main {
   fill: var(--yellow-400);
 }
 
+.pricing-plans {
+  text-align: center;
+  background-color: var(--neutral-100);
+  color: var(--brand-primary-700);
+}
+.pricing-plans article {
+  --flow-space: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--brand-primary-100);
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media screen and (min-width: 45em) {
+  .pricing-plans article {
+    min-block-size: 642px;
+  }
+}
+.pricing-plans ul {
+  --flow-space: 2.5rem;
+  text-align: left;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+.pricing-plans strong {
+  font-weight: 700;
+  font-size: var(--fs-800);
+  font-family: "Montserrat", sans-serif;
+}
+.pricing-plans li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pricing-plans .checkmark-icon {
+  block-size: 1.5rem;
+  inline-size: 1.5rem;
+  min-inline-size: 1.5rem;
+  fill: var(--brand-accent-400);
+}
+.pricing-plans .button {
+  --flow-space: 2.5rem;
+}
+@media screen and (min-width: 45em) {
+  .pricing-plans .button {
+    --flow-space: auto;
+  }
+}
+
 .even-columns {
   display: grid;
   column-gap: var(--even-column-column-gap, 1rem);
   row-gap: var(--even-column-row-gap, 1rem);
+  align-items: stretch;
 }
 @media screen and (min-width: 45em) {
   .even-columns {

@@ -1,0 +1,63 @@
+@use "../abstracts" as *;
+
+.pricing-compare {
+
+    font-size: $pricing-compare-font-size;
+    color: $pricing-compare-text-color;
+    background-color: $pricing-compare-background-color;
+    text-align: $pricing-compare-text-alignement;
+    
+    .wrapper {
+        overflow-x: auto;
+    }
+
+    .circle-checkmark-icon {
+        stroke: $color-brand-accent-400;
+        min-inline-size: 43px;
+        block-size: 43px;
+    }
+
+    strong {
+        font-size: $pricing-compare-table-price-heading-font-size;
+        @include mq(medium) {
+            font-size: $size-8;
+        }
+    }
+
+    thead {
+        padding-block-start: 2rem;
+        color: $pricing-compare-table-headings-color;
+    }
+
+    th:first-child {
+        inline-size: 10ch;
+        text-align: left;
+    }
+
+    th {
+        text-align: center;
+        padding-block-end: 2rem;
+    }
+
+
+    :is(td, table) {
+        border-bottom: #{$pricing-compare-table-border-bottom};
+        border-collapse: collapse;
+    }
+
+    tr:last-child td,
+    table {
+        border: none;
+    }
+
+
+    td:first-child {
+        text-align: left;
+        padding-inline: 0;
+    }
+
+    td {
+        padding-inline: $pricing-compare-cells-padding-inline;
+        padding-block: $pricing-compare-cells-padding-block;
+    }
+}

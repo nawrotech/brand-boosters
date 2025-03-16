@@ -772,6 +772,57 @@ main {
   }
 }
 
+.pricing-compare {
+  font-size: var(--fs-500);
+  color: var(--neutral-700);
+  background-color: var(--neutral-100);
+  text-align: center;
+}
+.pricing-compare .wrapper {
+  overflow-x: auto;
+}
+.pricing-compare .circle-checkmark-icon {
+  stroke: var(--brand-accent-400);
+  min-inline-size: 43px;
+  block-size: 43px;
+}
+.pricing-compare strong {
+  font-size: 2rem;
+}
+@media screen and (min-width: 45em) {
+  .pricing-compare strong {
+    font-size: 2rem;
+  }
+}
+.pricing-compare thead {
+  padding-block-start: 2rem;
+  color: var(--brand-primary-700);
+}
+.pricing-compare th:first-child {
+  inline-size: 10ch;
+  text-align: left;
+}
+.pricing-compare th {
+  text-align: center;
+  padding-block-end: 2rem;
+}
+.pricing-compare :is(td, table) {
+  border-bottom: 1px solid var(--neutral-200);
+  border-collapse: collapse;
+}
+.pricing-compare tr:last-child td,
+.pricing-compare table {
+  border: none;
+}
+.pricing-compare td:first-child {
+  text-align: left;
+  padding-inline: 0;
+}
+.pricing-compare td {
+  padding-inline: 4rem;
+  padding-block: 0.75rem;
+}
+
 .even-columns {
   display: grid;
   column-gap: var(--even-column-column-gap, 1rem);

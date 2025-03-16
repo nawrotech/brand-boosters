@@ -1,0 +1,47 @@
+{{ with .Site.GetPage "pricing/compare"  }}
+    <section class="section pricing-compare">
+        <div class="container" data-type="narrow">
+            <div class="wrapper">
+                <table class="mx-auto text-center">
+                    <thead>
+                        <tr>
+                            <th class="fs-800 ff-accent">{{ .Params.title }}</th>
+                            {{ range .Params.headingRow }}
+                                <th>
+                                    <p>{{ .planType }}</p>
+                                    <p><strong>${{ .price }}</strong>/month</p>
+                                </th>
+                            {{ end }}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ $rangeEnd := .Params.checkRangeEnds }}
+    
+                        {{ range .Params.rows }}
+                            <tr>
+                                <td>{{ .title }}</td>  
+    
+                                {{ $start := .checkRangeStarts }}
+                                {{ $columnsNeeded := $rangeEnd }}
+                                
+                                {{ if eq $start 1 }}
+                                    {{ range seq $start $rangeEnd }}
+                                        <td>{{ partial "icons/circle_checkmark_icon.html" . }}</td>
+                                    {{ end }}
+                                {{ else }}
+                                    {{ range seq 1 (sub $start 1) }}<td></td>{{ end }}
+                                    {{ range seq $start $rangeEnd }}
+                                        <td>
+                                            {{ partial "icons/circle_checkmark_icon.html" . }}
+                                        </td>
+                                    {{ end }}
+                                {{ end }}
+                            </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+{{ end }}

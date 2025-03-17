@@ -782,6 +782,8 @@ main {
   inline-size: 10ch;
   text-align: left;
   font-weight: 700;
+  font-size: var(--fs-800);
+  font-family: "Montserrat", sans-serif;
 }
 .pricing-compare th {
   text-align: center;

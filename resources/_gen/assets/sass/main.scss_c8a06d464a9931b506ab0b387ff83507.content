@@ -648,6 +648,7 @@ main {
   --sidebar-justification: left;
   --sidebar-width: 16rem;
   --sidebar-not-min-inline-size: 55%;
+  --sidebar-grow: 0;
   background-color: var(--brand-primary-100);
   color: var(--neutral-700);
 }

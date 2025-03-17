@@ -10,6 +10,7 @@
     --sidebar-justification: #{$about-testimonial-sidebar-justification};
     --sidebar-width: #{$about-testimonial-sidebar-width};
     --sidebar-not-min-inline-size: #{$about-testimonial-sidebar-not-min-inline-size};
+    --sidebar-grow: 0;
 
     background-color: $about-testimonial-background-color;
     color: $about-testimonial-text-color;

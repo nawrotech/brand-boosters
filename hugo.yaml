@@ -2,6 +2,28 @@ baseURL: 'https://example.org/'
 languageCode: 'en-us'
 title: 'Brand boosters'
 theme: 'base'
+build:
+  buildStats:
+    enable: true
+module:
+  hugoVersion:
+    extended: true
+    min: "0.115.0"
+  mounts:
+    - source: "assets"
+      target: "assets"
+    - source: "hugo_stats.json"
+      target: "assets/watching/hugo_stats.json"
+  
+author: "Nawrotech"
+keywords: 
+  - 'Brand visibility'
+  - 'Marketing strategies'
+  - 'Targeted advertising'
+  - 'Social media management'
+  - 'Content creation'
+  - 'Business growth'
+description: "Boost your brand’s visibility and success with BrandBoosters. We offer customized marketing strategies, targeted advertising, social media management, and high-quality content creation to help businesses achieve their goals. Learn more about our services today!"
 disableKinds:
   - taxonomy
   - term
@@ -9,12 +31,12 @@ menus:
   main:
     - name: Pricing
       pageRef: /pricing
-      weight: 10
+      weight: 20
     - name: About us
       pageRef: /about
-      weight: 20
+      weight: 10
     - name: Features
-      pageRef: /features
+      pageRef: /#features
       weight: 30
     - name: Contact Us
       pageRef: /

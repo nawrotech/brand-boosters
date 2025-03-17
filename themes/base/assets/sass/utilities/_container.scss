@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 
+/*! purgecss start ignore */
 .container {
   --padding: #{$container-min-margin-inline * 2};
   --max-inline-size: #{$container-max-inline-size};
@@ -17,3 +18,4 @@
 .container[data-type="full-bleed"] {
   --max-inline-size: 100%;
 }
+/*! purgecss end ignore */

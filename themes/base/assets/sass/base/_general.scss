@@ -7,6 +7,10 @@ body {
   color: $body-text-color;
   background-color: $body-background-color;
   line-height: $body-line-height;
+
+  &:has(#hamburger-menu:checked) {
+      overflow: hidden;
+  }
 }
 
 a {

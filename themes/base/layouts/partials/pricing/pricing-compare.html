@@ -5,9 +5,12 @@
                 <table class="mx-auto text-center">
                     <thead>
                         <tr>
-                            <th class="fs-800 ff-accent">{{ .Params.title }}</th>
+                            <th>
+                                {{ .Params.title }}
+                               
+                            </th>
                             {{ range .Params.headingRow }}
-                                <th>
+                                <th> 
                                     <p>{{ .planType }}</p>
                                     <p><strong>${{ .price }}</strong>/month</p>
                                 </th>

@@ -329,10 +329,17 @@ $pricing-plans-checkmark-icon-color: $color-brand-accent-400;
 
 
 // pricing compare
+$pricing-compare-title-font-weight: $font-weight-bold;
+$pricing-compare-title-font-size: $font-size-800;
+$pricing-compare-title-font-family: $font-family-accent;
+
+
 $pricing-compare-text-alignement: center;
 $pricing-compare-text-color: $color-neutral-700;
 $pricing-compare-background-color: $color-neutral-100;
 $pricing-compare-font-size: $font-size-500;
+
+
 
 $pricing-compare-table-price-heading-font-size: $size-8;
 $pricing-compare-table-headings-color: $color-brand-primary-700;

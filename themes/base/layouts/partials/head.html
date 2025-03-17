@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 {{ with resources.Get "sass/main.scss" }}
   {{ $opts := dict
     "enableSourceMap" (not hugo.IsProduction)
@@ -7,9 +8,9 @@
     "targetPath" "css/main.css"
     "transpiler" "dartsass"
   }}
-  {{ with . | toCSS $opts }}
+  {{ with . | toCSS $opts  }}
     {{ if hugo.IsProduction }}
-      {{ with . | fingerprint }}
+      {{ with .  | postCSS | minify | fingerprint | resources.PostProcess   }}
         <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
       {{ end }}
     {{ else }}

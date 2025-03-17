@@ -1,7 +1,6 @@
 @use "../abstracts" as *;
 
 .pricing-compare {
-
     font-size: $pricing-compare-font-size;
     color: $pricing-compare-text-color;
     background-color: $pricing-compare-background-color;
@@ -16,6 +15,8 @@
         min-inline-size: 43px;
         block-size: 43px;
     }
+
+
 
     strong {
         font-size: $pricing-compare-table-price-heading-font-size;
@@ -32,6 +33,9 @@
     th:first-child {
         inline-size: 10ch;
         text-align: left;
+        font-weight: $pricing-compare-title-font-weight;
+        font-size: $pricing-compare-title-font-size;
+        font-family: $pricing-compare-title-font-family;
     }
 
     th {
@@ -40,7 +44,8 @@
     }
 
 
-    :is(td, table) {
+    td, 
+    table {
         border-bottom: #{$pricing-compare-table-border-bottom};
         border-collapse: collapse;
     }

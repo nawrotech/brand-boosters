@@ -1,9 +1,10 @@
 @use "../abstracts" as *;
 
+
 .about-offer {
     --flow-space: #{$about-offer-flow-space};
-    --grid-auto-fit-min-width: #{$about-offer-grid-auto-fit-min-width};
     --grid-auto-fit-gap: #{$about-offer-grid-auto-fit-gap};
+    --grid-auto-fit-min-width: #{$about-offer-grid-auto-fit-min-width};
 
     background-color: $about-offer-background-color;
     color: $about-offer-text-color;
@@ -34,7 +35,4 @@
     .arrow-icon {
         fill : $about-offer-arrow-icon-color;
     }
-
-
-
 }

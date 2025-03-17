@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 
+/*! purgecss start ignore */
 .button {
   display: inline-block;
   align-content: center;
@@ -15,8 +16,8 @@
   padding-block: $button-padding-block;
   border: $button-border;
   border-radius: $button-border-radius;
-  
   transition: 275ms ease;
+
 
   &[data-type="primary"] {
     background-color: $button-primary-background;
@@ -49,5 +50,5 @@
     }
   }
 
-
 }
+/*! purgecss end ignore */

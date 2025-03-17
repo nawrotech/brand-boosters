@@ -125,6 +125,9 @@ body {
   background-color: var(--brand-primary-100);
   line-height: 1.5;
 }
+body:has(#hamburger-menu:checked) {
+  overflow: hidden;
+}
 
 a {
   color: var(--brand-primary-400);
@@ -147,6 +150,7 @@ main {
   isolation: isolate;
 }
 
+/*! purgecss start ignore */
 .button {
   display: inline-block;
   align-content: center;
@@ -188,6 +192,7 @@ main {
   color: var(--brand-primary-400);
 }
 
+/*! purgecss end ignore */
 .features {
   --flow-space: 2rem;
 }
@@ -669,8 +674,8 @@ main {
 
 .about-offer {
   --flow-space: 3.75rem;
-  --grid-auto-fit-min-width: 320px;
   --grid-auto-fit-gap: 2rem;
+  --grid-auto-fit-min-width: 320px;
   background-color: var(--neutral-100);
   color: var(--neutral-400);
   text-align: left;
@@ -735,7 +740,7 @@ main {
 }
 .pricing-plans .checkmark-icon {
   block-size: 1.5rem;
-  min-inline-size: 1.5rem;
+  max-inline-size: 1.5rem;
   fill: var(--brand-accent-400);
 }
 .pricing-plans .button {
@@ -776,12 +781,14 @@ main {
 .pricing-compare th:first-child {
   inline-size: 10ch;
   text-align: left;
+  font-weight: 700;
 }
 .pricing-compare th {
   text-align: center;
   padding-block-end: 2rem;
 }
-.pricing-compare :is(td, table) {
+.pricing-compare td,
+.pricing-compare table {
   border-bottom: 1px solid var(--neutral-200);
   border-collapse: collapse;
 }
@@ -824,12 +831,14 @@ main {
   }
 }
 
+/*! purgecss start ignore */
 .grid-auto-fit {
   display: grid;
   gap: var(--grid-auto-fit-gap, 1.5rem);
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-auto-fit-min-width, 250px), 100%), 1fr));
 }
 
+/*! purgecss end ignore */
 .cluster {
   display: flex;
   flex-flow: row wrap;
@@ -1722,6 +1731,7 @@ main {
   padding-inline: 10rem;
 }
 
+/*! purgecss start ignore */
 .container {
   --padding: 2.5rem;
   --max-inline-size: 68.75rem;
@@ -1741,6 +1751,7 @@ main {
   --max-inline-size: 100%;
 }
 
+/*! purgecss end ignore */
 .fw-regular {
   font-weight: 400;
 }
@@ -1797,8 +1808,8 @@ main {
   justify-content: center;
 }
 
-.flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-space, 1em);
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
 }
 
 .border-radius-1 {

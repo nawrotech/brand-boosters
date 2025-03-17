@@ -39,7 +39,7 @@
     }
   }
 
-  .header:has(#hamburger-menu:checked) & {
+  .hamburger-menu:checked ~ & {
     grid-template-rows: 1fr;
     opacity: 1;
     padding-block-end: $size-8; 

@@ -443,7 +443,7 @@ main {
     --flex-column-gap: 2.5rem;
   }
 }
-.header:has(#hamburger-menu:checked) .nav {
+.hamburger-menu:checked ~ .nav {
   grid-template-rows: 1fr;
   opacity: 1;
   padding-block-end: 2rem;

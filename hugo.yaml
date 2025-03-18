@@ -15,15 +15,6 @@ module:
     - source: "hugo_stats.json"
       target: "assets/watching/hugo_stats.json"
   
-author: "Nawrotech"
-keywords: 
-  - 'Brand visibility'
-  - 'Marketing strategies'
-  - 'Targeted advertising'
-  - 'Social media management'
-  - 'Content creation'
-  - 'Business growth'
-description: "Boost your brand’s visibility and success with BrandBoosters. We offer customized marketing strategies, targeted advertising, social media management, and high-quality content creation to help businesses achieve their goals. Learn more about our services today!"
 disableKinds:
   - taxonomy
   - term
@@ -44,3 +35,13 @@ menus:
     - name: Careers
       pageRef: /
       weight: 50
+params:
+  author: "Nawrotech"
+  keywords:
+    - 'Brand visibility'
+    - 'Marketing strategies'
+    - 'Targeted advertising'
+    - 'Social media management'
+    - 'Content creation'
+    - 'Business growth'
+  description: "Boost your brand’s visibility and success with BrandBoosters. We offer customized marketing strategies, targeted advertising, social media management, and high-quality content creation to help businesses achieve their goals. Learn more about our services today!"

@@ -1,6 +1,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="author" content="{{ site.Params.author }}">
+
+{{ if .IsHome }}
+    <meta name="keywords" content="{{ delimit site.Params.keywords ", " ", and " }}">
+    {{ else }}
+    <meta name="keywords" content="{{ delimit .Keywords ", " ", and " }}">
+{{ end }}
+
+{{ if .IsHome }}
+  <meta name="description" content="{{ site.Params.description }}">
+  {{ else }}
+  <meta name="description" content="{{ .Description }}">
+{{ end }}
+
+
 {{ with resources.Get "sass/main.scss" }}
   {{ $opts := dict
     "enableSourceMap" (not hugo.IsProduction)
